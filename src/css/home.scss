@@ -1,3 +1,16 @@
-h1 {
-  color: #00e94c;
+* {
+  margin: 0;
+  padding: 0;
+}
+.panel_div {
+  margin: 0;
+  padding: 0;
+}
+.swiper-slide{
+  width: 100vw;
+  height: 100vh;
+}
+.swiper-container-vertical > .swiper-pagination-bullets {
+  bottom: 10px;
+  left: 50%;
 }
