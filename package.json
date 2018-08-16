@@ -11,12 +11,15 @@
   "author": "cheng.jiafeng",
   "license": "ISC",
   "dependencies": {
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.9.3",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "redux": "^4.0.0",
     "redux-thunk": "^2.2.0",
+    "sass-loader": "^7.1.0",
     "webpack": "^3.11.0"
   },
   "devDependencies": {
