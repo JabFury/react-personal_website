@@ -1,2 +1,2 @@
-# react-demo
-基于webpack搭建的一个react全家桶项目。
+# react-swiperPage
+基于react.js + swiper.js 而制作的滑动控制跳转路由
