@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 // import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
-import {HashRouter as Router, Route, Link, hashHistory, Switch} from 'react-router-dom';
+import {HashRouter as Router, Route, Link, hashHistory, Switch,Redirect} from 'react-router-dom';
 import Bundle from './Bundle';
 
 // import Home from 'bundle-loader?lazy&name=home!../components/home';
@@ -55,13 +55,13 @@ class getRouter extends Component {
             <div>
                 <div className="wxchat-banner">
                     <div className="swiper-wrapper panel_div">
-                        <div className="swiper-slide" style={{background:'#08ee65'}} data-hash="test1">
+                        <div className="swiper-slide" style={{background:'#08ee65'}} data-hash="/test1">
                             <Test1 />
                         </div>
-                        <div className="swiper-slide" style={{background:'#8fceff'}} data-hash="test2">
+                        <div className="swiper-slide" style={{background:'#8fceff'}} data-hash="/test2">
                             <Test2 />
                         </div>
-                        <div className="swiper-slide" style={{background:'#c7d6e5'}} data-hash="test3">
+                        <div className="swiper-slide" style={{background:'#c7d6e5'}} data-hash="/test3">
                             <Test3 />
                         </div>
                     </div>
@@ -72,17 +72,17 @@ class getRouter extends Component {
                     {/*如果需要分页器*/}
                     {/*<div class="swiper-pagination"></div>*/}
                 </div>
-                {/*<Router history={hashHistory}>*/}
-                    {/*<Switch>*/}
+                <Router history={hashHistory}>
+                    <Switch>
                         {/*<Route exact path="/" component={createComponent(Home)}/>*/}
-                        {/*<Route exact path="/test1" component={createComponent(Test1)}/>*/}
-                        {/*<Route exact path="/test2" component={createComponent(Test2)}/>*/}
-                        {/*<Route exact path="/test3" component={createComponent(Test3)}/>*/}
+                        <Route exact path="/test1" component={Test1}/>
+                        <Route  path="/test2" component={Test2}/>
+                        <Route  path="/test3" component={Test3}/>
                         {/*/!*<Route path="/child" component={createComponent(Child)}/>*!/*/}
                         {/*/!*<Route path="/counter" component={createComponent(Counter)}/>*!/*/}
                         {/*/!*<Route path="/user-info" component={createComponent(GetUserInfo)}/>*!/*/}
-                    {/*</Switch>*/}
-                {/*</Router>*/}
+                    </Switch>
+                </Router>
             </div>
 
         )
