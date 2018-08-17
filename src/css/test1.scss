@@ -1,0 +1,23 @@
+.container_div {
+  width: 1000px;
+  height: 700px;
+  position: relative;
+  background: rebeccapurple;
+}
+//.la {
+//  width: 200px;
+//  height:200px;
+//  background: cornsilk;
+//  //position: absolute;
+//  //left: 50%;
+//
+//}
+.la {
+  width: 200px;
+  height:200px;
+  position: absolute;
+  background: cornsilk;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%)
+}

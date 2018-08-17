@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
+import '../../css/test2.scss'
+class Test2 extends Component {
+    constructor(props) {
+        super(props);
 
-class Test1 extends Component {
-
+    }
     render() {
         return (
             <div className='container_div'>
@@ -13,4 +16,4 @@ class Test1 extends Component {
     }
 }
 
-export default Test1;
+export default Test2;

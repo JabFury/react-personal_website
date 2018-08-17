@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 
-class Test1 extends Component {
+class Test3 extends Component {
+    constructor(props) {
+        super(props);
 
+    }
     render() {
         return (
             <div className='container_div'>
@@ -13,4 +16,4 @@ class Test1 extends Component {
     }
 }
 
-export default Test1;
+export default Test3;
