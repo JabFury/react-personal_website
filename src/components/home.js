@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import '../css/home.scss'
 import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.css'
+
+import Personal from './personal/personal'
 import welcome_top from '../images/welcome/welcome_top.jpg'
 import welcome_bottom from '../images/welcome/welcome_bottom.jpg'
 
@@ -76,7 +78,7 @@ class Home extends Component {
                             <div className="first_banner">
                                 <div className="swiper-wrapper">
                                     <div className="swiper-slide" style={{background: '#ff973b'}}>
-
+                                        <Personal/>
                                     </div>
                                     <div className="swiper-slide" style={{background: '#ff2d4d'}}>child 2</div>
                                     <div className="swiper-slide" style={{background: '#ba93ce'}}>child 3</div>
