@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.welcome {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  //background-image: url("../images/welcome1.jpg");
+  //background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+.bg_div {
+  width: 100vw;
+  height: 100vh;
+  float: left;
+  position: relative;
+  z-index: -100;
+}
+.title_div {
+  width: 200px;
+  height: 250px;
+  //background: aqua;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.name {
+  font-size: 50px;
+  color: #ffffff;
+}
+.begin{
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  //border: 2px solid #ffffff;
+  box-sizing: border-box;
+
+
+  .begin_txt {
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+
+.line_top{
+  width: 0;
+  height: 0;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+.begin:hover .line_top{
+  width: 150px;
+  height: 2px;
+  top: 2px;
+  left: 0;
+}
+.line_bottom{
+  width: 0;
+  height: 0;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: -200px;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+.begin:hover .line_bottom {
+  width: 150px;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+}
+.line_left{
+  width: 0;
+  height: 0;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+.begin:hover .line_left {
+  width: 2px;
+  height: 46px;
+  bottom: 0;
+  left: 0;
+}
+.line_right{
+  width: 0;
+  height: 0;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  top: -70px;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+.begin:hover .line_right{
+  width: 2px;
+  height: 46px;
+  top: 2px;
+  right: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}

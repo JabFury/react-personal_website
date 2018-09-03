@@ -1,0 +1,149 @@
+.middle, .left, .right {
+  float: left;
+}
+
+.left {
+  background: aquamarine;
+  width: 300px;
+  height: 300px;
+  //margin-left: -100%;
+  position: relative;
+  left:-300px;
+}
+
+.right {
+  background: gold;
+  width: 300px;
+  height:300px;
+  margin-left: -300px;
+  position: relative;
+  right:-300px;
+}
+.middle {
+  border: 1px solid black;
+  height: 300px;
+  padding: 0 400px;
+}
+.container{
+
+  border: 1px solid black;
+
+  height: 300px;
+
+  padding: 0 400px;
+
+}
+
+
+.donghua1 {
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.7s ease-in;
+  //background-image: url(../images/welcome.jpg);
+  //background-repeat: no-repeat;
+}
+
+.activeMove1 {
+  top: -50vh;
+}
+
+.donghua2 {
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  z-index: 100;
+  transition: all 0.7s ease-in;
+  //background-image: url(../images/welcome.jpg);
+  //background-repeat: no-repeat;
+  //background-position: 0 -50vh;
+  //animation: myMove 1s linear forwards;
+}
+
+//@keyframes myMove {
+//  0% {
+//    top: 50vh;
+//  }
+//  100% {
+//    top: 100vh;
+//    height: 0;
+//  }
+//}
+
+.activeMove2 {
+  top: 100vh;
+}
+
+.xuanzhuan {
+  width: 80px;
+  height: 100px;
+  position: absolute;
+  bottom: 210px;
+  right: 21%;
+  z-index: 100;
+  background: transparent;
+  animation: logoRotate 2s infinite;
+}
+
+@keyframes logoRotate {
+  0% {
+    transform: rotate(0deg);
+    transition: all 0.1s ease-in-out;
+  }
+  50% {
+    transform: rotate(180deg);
+    transition: all 0.1s ease-in-out;
+  }
+  100% {
+    transform: rotate(360deg);
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+.panel_div {
+  margin: 0;
+  padding: 0;
+}
+.swiper-slide{
+  width: 100vw;
+  height: 100vh;
+}
+
+.index_banner {
+  width: 100vw;
+  height: 100vh;
+}
+.first_banner {
+  width: 100vw;
+  height: 100vh;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
