@@ -1,14 +1,35 @@
 .introduce {
   p {
-    text-indent:2em;
+    text-indent: 2em;
     font-size: 18px;
     margin: 1.5vh 0 1.5vh 1vw;
     font-style: normal;
-    font-family:"Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
   }
 }
+
 .external-link {
   p {
     font-size: 16px;
   }
 }
+
+.personal_bg {
+  width: 100vw;
+  height: 100vh;
+  float: left;
+
+  .inform_div {
+    width: 60vw;
+    height:40vh;
+    border-radius: 8px;
+    background: #ffffff;
+    opacity: 0.85;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+  }
+}
+

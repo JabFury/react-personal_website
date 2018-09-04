@@ -113,6 +113,8 @@
   padding: 0;
 }
 body {
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 .panel_div {
@@ -122,6 +124,9 @@ body {
 .swiper-slide{
   width: 100vw;
   height: 100vh;
+  margin: 0;
+  padding: 0;
+  //overflow: hidden;
 }
 
 .index_banner {
@@ -137,6 +142,63 @@ img {
   height: 100%;
 }
 
+.next_btn {
+  width:70px;
+  height:70px;
+  background:transparent;
+  position:absolute;
+  bottom:10px;
+  left:50%;
+  transform: translateX(-50%);
+  z-index:99;
+  font-size: 60px;
+  color: #cccccc;
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+.next_btn:hover {
+  color: #ffffff;
+}
+
+.first_prev {
+  width: 60px;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 99;
+  text-align: center;
+  line-height: 100vh;
+  font-size: 50px;
+  color: transparent;
+  font-weight: bold;
+}
+.first_prev:hover {
+  //background: #666666;
+  //opacity: 0.1;
+  color: #ffffff;
+}
+.first_next {
+  width: 60px;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 99;
+  text-align: center;
+  line-height: 100vh;
+  font-size: 50px;
+  color: transparent;
+  font-weight: bold;
+}
+.first_next:hover {
+  //background: #666666;
+  //opacity: 0.1;
+  color: #ffffff;
+}
 
 
 

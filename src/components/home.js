@@ -2,10 +2,11 @@ import React, {Component} from 'react'
 import '../css/home.scss'
 import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.css'
-
+import {Icon} from 'antd'
 import Personal from './personal/personal'
 import welcome_top from '../images/welcome/welcome_top.jpg'
 import welcome_bottom from '../images/welcome/welcome_bottom.jpg'
+import home_bg from "../images/home/home_bg.jpg";
 
 class Home extends Component {
     constructor(props) {
@@ -28,6 +29,9 @@ class Home extends Component {
             mousewheel: true,
             keyboard: true,
             allowTouchMove: true,
+            navigation: {
+                nextEl: '.next_btn',
+            },
         });
         let mySwiper2 = new Swiper('.first_banner', {
             direction: 'horizontal',
@@ -35,23 +39,24 @@ class Home extends Component {
                 el: '.swiper-pagination',
             },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.first_next',
+                prevEl: '.first_prev',
             },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //     snapOnRelease: false,
+            // },
             speed: 600,
             observer: true,
             keyboard: true,
             grabCursor: true,
             allowTouchMove: true,
         });
-        mySwiper2.scrollbar.$el.css({
-            position: 'absolute',
-            top: 0,
-            left: 0
-        });
+        // mySwiper2.scrollbar.$el.css({
+        //     position: 'absolute',
+        //     top: 0,
+        //     left: 0
+        // });
 
 
     }
@@ -71,27 +76,36 @@ class Home extends Component {
                             <img src={welcome_bottom}/>
                         </div>
                 }
+                <img style={{position:'absolute',zIndex:'-100'}} src={home_bg}/>
                 <div className="index_banner">
                     <div className="swiper-wrapper panel_div">
-                        <div className="swiper-slide" style={{background: '#08ee65'}}>
+                        <div className="swiper-slide" style={{background: 'transparent'}}>
 
                             <div className="first_banner">
                                 <div className="swiper-wrapper">
-                                    <div className="swiper-slide" style={{background: '#ff973b'}}>
+                                    <div className="swiper-slide" style={{background: 'transparent'}}>
                                         <Personal/>
                                     </div>
                                     <div className="swiper-slide" style={{background: '#ff2d4d'}}>child 2</div>
                                     <div className="swiper-slide" style={{background: '#ba93ce'}}>child 3</div>
                                 </div>
-                                <div className="swiper-scrollbar"></div>
+                                <div className='first_prev' >
+                                    <Icon type="left" theme="outlined" />
+                                </div>
+                                <div className='first_next'>
+                                    <Icon type="right" theme="outlined" />
+                                </div>
                             </div>
                         </div>
-                        <div className="swiper-slide" style={{background: '#8fceff'}}>
+                        <div className="swiper-slide" style={{background: '#333333',opacity:'0.6'}}>
                             2
                         </div>
-                        <div className="swiper-slide" style={{background: '#c7d6e5'}}>
+                        <div className="swiper-slide" style={{background: '#333333',opacity:'0.9'}}>
                             3
                         </div>
+                    </div>
+                    <div className="next_btn">
+                        <Icon type="arrow-down" theme="outlined" />
                     </div>
                 </div>
             </div>
