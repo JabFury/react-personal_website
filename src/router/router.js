@@ -8,13 +8,15 @@ import Home from 'bundle-loader?lazy&name=home!../components/home';
 import Welcome from 'bundle-loader?lazy&name=home!../components/welcome';
 import '../css/router.scss'
 
+import welcome_top from '../images/welcome/welcome_top.jpg'
+import welcome_bottom from '../images/welcome/welcome_bottom.jpg'
 
 const Loading = function () {
     return (
         <div
             style={{
                 width:'100vw',height:'100vh',background:'transparent',
-                position:'absolute',top:0,left:0,zIndex:1000
+                position:'absolute',top:0,left:0,zIndex:1000,overFlow:'hidden'
             }}>
             <div className="spinner">
                 <div className="rect1"></div>
@@ -23,6 +25,9 @@ const Loading = function () {
                 <div className="rect4"></div>
                 <div className="rect5"></div>
             </div>
+
+            <div className='img_top'><img src={welcome_top}/></div>
+            <div className='img_Bottom'><img src={welcome_bottom}/></div>
 
         </div>
     )

@@ -4,6 +4,8 @@ import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.css'
 import {Icon} from 'antd'
 import Personal from './personal/personal'
+import History from './history/history'
+
 import welcome_top from '../images/welcome/welcome_top.jpg'
 import welcome_bottom from '../images/welcome/welcome_bottom.jpg'
 import home_bg from "../images/home/home_bg.jpg";
@@ -13,16 +15,17 @@ class Home extends Component {
         super(props)
         this.state = {
             isLoad: false,
-            isHide: true
+            isHide: true,
+            num:null
         }
     }
 
     componentDidMount() {
         setTimeout(() => {
             this.setState({isLoad: true});
-        }, 300)
+        }, 500)
         setTimeout(() => {this.setState({isHide: false})},1500);
-        new Swiper('.index_banner', {
+        let mySwiper1 =new Swiper('.index_banner', {
             direction: 'vertical',
             speed: 800,
             observer: true,
@@ -57,6 +60,9 @@ class Home extends Component {
         //     top: 0,
         //     left: 0
         // });
+
+        console.log(mySwiper1.activeIndex);
+        this.setState({num: mySwiper1.activeIndex})
 
 
     }
@@ -98,7 +104,7 @@ class Home extends Component {
                             </div>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333',opacity:'0.6'}}>
-                            2
+                            <History currentNum={this.state.num}/>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333',opacity:'0.9'}}>
                             3
