@@ -10,20 +10,23 @@ import welcome_top from '../images/welcome/welcome_top.jpg'
 import welcome_bottom from '../images/welcome/welcome_bottom.jpg'
 import home_bg from "../images/home/home_bg.jpg";
 
+
+let pageIndex = 0;
 class Home extends Component {
     constructor(props) {
         super(props)
         this.state = {
             isLoad: false,
             isHide: true,
-            num:null
+            currentNum:0
         }
     }
 
     componentDidMount() {
         setTimeout(() => {
             this.setState({isLoad: true});
-        }, 500)
+        }, 500);
+        let _this = this;
         setTimeout(() => {this.setState({isHide: false})},1500);
         let mySwiper1 =new Swiper('.index_banner', {
             direction: 'vertical',
@@ -34,6 +37,11 @@ class Home extends Component {
             allowTouchMove: true,
             navigation: {
                 nextEl: '.next_btn',
+            },
+            on:{
+                slideChangeTransitionStart: function(){
+                    _this.setState({currentNum:this.activeIndex})
+                },
             },
         });
         let mySwiper2 = new Swiper('.first_banner', {
@@ -61,8 +69,9 @@ class Home extends Component {
         //     left: 0
         // });
 
-        console.log(mySwiper1.activeIndex);
-        this.setState({num: mySwiper1.activeIndex})
+        // console.log(mySwiper1.activeIndex);
+        // console.log(mySwiper1.realIndex);
+        // this.setState({num: mySwiper1.activeIndex})
 
 
     }
@@ -104,7 +113,7 @@ class Home extends Component {
                             </div>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333',opacity:'0.6'}}>
-                            <History currentNum={this.state.num}/>
+                            <History currentNum={this.state.currentNum}/>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333',opacity:'0.9'}}>
                             3
