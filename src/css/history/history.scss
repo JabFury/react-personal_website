@@ -30,7 +30,7 @@
   z-index: 1;
 }
 .foot_1 {
-  left: 4%;
+  left: 4.5%;
 }
 .foot_2 {
   left: 14%;
@@ -81,20 +81,22 @@
 
 
 .inform_txt {
-  width: 20vh;
+  width: 22vh;
   height: 10vh;
+  //background: aqua;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   color:transparent;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: lighter;
   word-wrap: break-word;
   transition: all 5s ease-in-out;
 }
 .txt_dan {
   color:#ffffff;
-  top:-15vh;
+  top:-16vh;
+  //-webkit-top:-18vh;
 }
 .txt_shuang {
   color:#ffffff;
