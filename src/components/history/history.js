@@ -14,7 +14,6 @@ export default class History extends Component {
 
     render() {
         let isCurrentPage = (this.props.currentNum === 1);
-        console.log(isCurrentPage);
         const pageData = [
             {iconUrl: '#icon-chusheng', type: 'shu_dan', year: '1996.2', txt: '感谢父母赐予生命，让我降临到这个世界'},
             {iconUrl: '#icon-xiaoxue', type: 'shu_shuang', year: '2002.9', txt: '步入校园，开始追寻探索求学之路的奇妙旅程'},

@@ -5,6 +5,7 @@ import 'swiper/dist/css/swiper.css'
 import {Icon} from 'antd'
 import Personal from './personal/personal'
 import History from './history/history'
+import Connect from './connect/connect'
 
 import welcome_top from '../images/welcome/welcome_top.jpg'
 import welcome_bottom from '../images/welcome/welcome_bottom.jpg'
@@ -116,7 +117,7 @@ class Home extends Component {
                             <History currentNum={this.state.currentNum}/>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333',opacity:'0.9'}}>
-                            3
+                            <Connect currentNum={this.state.currentNum}/>
                         </div>
                     </div>
                     <div className="next_btn">

@@ -1,0 +1,70 @@
+.connect_header {
+  width: 100%;
+  height: 30vh;
+  //background: aquamarine;
+  position: relative;
+
+  .connect_title {
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 30px;
+  }
+
+  .icon_div {
+    width: 35%;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 20vh;
+  }
+
+
+}
+.wechat_model {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+  opacity: 0.5;
+  transition: all 1.6s ease-in-out;
+}
+.show_wechat_model {
+  width: 100vw;
+  height: 100vh;
+  background: #cccccc;
+}
+.we-chat {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 15;
+  opacity: 1;
+  transition: all 1.6s ease-in-out;
+}
+
+.show_wechat {
+  width: 15vw;
+  height: 15vw;
+}
+
+.connect_icon_svg {
+  width: 2.5vw;
+  height: 2.5vw;
+  margin-left: 11%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
