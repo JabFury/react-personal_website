@@ -13,13 +13,15 @@ import home_bg from "../images/home/home_bg.jpg";
 
 
 let pageIndex = 0;
+
 class Home extends Component {
     constructor(props) {
         super(props)
         this.state = {
             isLoad: false,
             isHide: true,
-            currentNum:0
+            currentNum: 0,
+            isFullScreen: false
         }
     }
 
@@ -28,8 +30,10 @@ class Home extends Component {
             this.setState({isLoad: true});
         }, 500);
         let _this = this;
-        setTimeout(() => {this.setState({isHide: false})},1500);
-        let mySwiper1 =new Swiper('.index_banner', {
+        setTimeout(() => {
+            this.setState({isHide: false})
+        }, 1500);
+        let mySwiper1 = new Swiper('.index_banner', {
             direction: 'vertical',
             speed: 800,
             observer: true,
@@ -39,9 +43,9 @@ class Home extends Component {
             navigation: {
                 nextEl: '.next_btn',
             },
-            on:{
-                slideChangeTransitionStart: function(){
-                    _this.setState({currentNum:this.activeIndex})
+            on: {
+                slideChangeTransitionStart: function () {
+                    _this.setState({currentNum: this.activeIndex})
                 },
             },
         });
@@ -77,9 +81,53 @@ class Home extends Component {
 
     }
 
+    requestFullScreen() {
+        this.setState({isFullScreen: true});
+        var de = document.documentElement;
+        if (de.requestFullscreen) {
+            de.requestFullscreen();
+        } else if (de.mozRequestFullScreen) {
+            de.mozRequestFullScreen();
+        } else if (de.webkitRequestFullScreen) {
+            de.webkitRequestFullScreen();
+        }
+    }
+
+    exitFullscreen() {
+        this.setState({isFullScreen: false});
+        var de = document;
+        if (de.exitFullscreen) {
+            de.exitFullscreen();
+        } else if (de.mozCancelFullScreen) {
+            de.mozCancelFullScreen();
+        } else if (de.webkitCancelFullScreen) {
+            de.webkitCancelFullScreen();
+        }
+    }
+
     render() {
         return (
             <div>
+                <div className='whole'>
+
+                    {
+                        this.state.isFullScreen === false ?
+                            <label style={{cursor: 'pointer'}}>
+                                全屏显示
+                                <Icon className='whole_icon' onClick={() => {
+                                    this.requestFullScreen()
+                                }} type="fullscreen" theme="outlined"/>
+                            </label>
+                            :
+                            <label style={{cursor: 'pointer'}}>
+                                全屏显示
+                                <Icon className='whole_icon' onClick={() => {
+                                    this.exitFullscreen()
+                                }} type="fullscreen-exit" theme="outlined"/>
+                            </label>
+                    }
+
+                </div>
                 {
                     this.state.isHide === false ? null :
                         <div className={['donghua1', this.state.isLoad === true ? 'activeMove1' : null].join(' ')}>
@@ -92,7 +140,7 @@ class Home extends Component {
                             <img src={welcome_bottom}/>
                         </div>
                 }
-                <img style={{position:'absolute',zIndex:'-100'}} src={home_bg}/>
+                <img style={{position: 'absolute', zIndex: '-100'}} src={home_bg}/>
                 <div className="index_banner">
                     <div className="swiper-wrapper panel_div">
                         <div className="swiper-slide" style={{background: 'transparent'}}>
@@ -105,23 +153,23 @@ class Home extends Component {
                                     <div className="swiper-slide" style={{background: '#ff2d4d'}}>child 2</div>
                                     <div className="swiper-slide" style={{background: '#ba93ce'}}>child 3</div>
                                 </div>
-                                <div className='first_prev' >
-                                    <Icon type="left" theme="outlined" />
+                                <div className='first_prev'>
+                                    <Icon type="left" theme="outlined"/>
                                 </div>
                                 <div className='first_next'>
-                                    <Icon type="right" theme="outlined" />
+                                    <Icon type="right" theme="outlined"/>
                                 </div>
                             </div>
                         </div>
-                        <div className="swiper-slide" style={{background: '#333333',opacity:'0.6'}}>
+                        <div className="swiper-slide" style={{background: '#333333', opacity: '0.6'}}>
                             <History currentNum={this.state.currentNum}/>
                         </div>
-                        <div className="swiper-slide" style={{background: '#333333',opacity:'0.9'}}>
+                        <div className="swiper-slide" style={{background: '#333333', opacity: '0.9'}}>
                             <Connect currentNum={this.state.currentNum}/>
                         </div>
                     </div>
                     <div className="next_btn">
-                        <Icon type="arrow-down" theme="outlined" />
+                        <Icon type="arrow-down" theme="outlined"/>
                     </div>
                 </div>
             </div>
