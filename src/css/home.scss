@@ -115,14 +115,14 @@ body {
 }
 //全屏显示
 .whole {
-  width: 100px;
+  width: 90px;
   height: 3vh;
-  background: #8fceff;
+  //background: #8fceff;
   position: absolute;
-  top: 0;
-  right:7%;
-  font-size: 18px;
-  color: #333333;
+  top: 1%;
+  right:1%;
+  font-size: 16px;
+  color: #ffffff;
   font-weight: lighter;
   cursor: pointer;
   z-index: 10;
@@ -130,12 +130,17 @@ body {
   padding: 0;
   margin: 0;
 }
-.whole_icon {
-  font-size: 25px;
-  cursor: pointer;
-  padding: 0;
+.icon_fullScreen {
+  width: 18px;
+  height: 18px;
+  color: #333333;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
   margin: 0;
-  float: right;
+  padding: 0;
+  cursor: pointer;
 }
 .panel_div {
   margin: 0;
@@ -186,13 +191,14 @@ img {
 
 .first_prev {
   width: 60px;
-  height: 100vh;
+  height: 80vh;
   position: absolute;
-  top:0;
+  top:50%;
   left:0;
+  transform: translateY(-50%);
   z-index: 99;
   text-align: center;
-  line-height: 100vh;
+  line-height: 80vh;
   font-size: 50px;
   color: transparent;
   font-weight: bold;
@@ -204,13 +210,14 @@ img {
 }
 .first_next {
   width: 60px;
-  height: 100vh;
+  height: 80vh;
   position: absolute;
-  top:0;
+  top:50%;
   right:0;
+  transform: translateY(-50%);
   z-index: 99;
   text-align: center;
-  line-height: 100vh;
+  line-height: 80vh;
   font-size: 50px;
   color: transparent;
   font-weight: bold;

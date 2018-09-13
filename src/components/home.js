@@ -12,8 +12,6 @@ import welcome_bottom from '../images/welcome/welcome_bottom.jpg'
 import home_bg from "../images/home/home_bg.jpg";
 
 
-let pageIndex = 0;
-
 class Home extends Component {
     constructor(props) {
         super(props)
@@ -21,7 +19,8 @@ class Home extends Component {
             isLoad: false,
             isHide: true,
             currentNum: 0,
-            isFullScreen: false
+            isFullScreen: false,
+            wholePage: null
         }
     }
 
@@ -33,7 +32,7 @@ class Home extends Component {
         setTimeout(() => {
             this.setState({isHide: false})
         }, 1500);
-        let mySwiper1 = new Swiper('.index_banner', {
+        var mySwiper1 = new Swiper('.index_banner', {
             direction: 'vertical',
             speed: 800,
             observer: true,
@@ -45,11 +44,14 @@ class Home extends Component {
             },
             on: {
                 slideChangeTransitionStart: function () {
-                    _this.setState({currentNum: this.activeIndex})
+                    _this.setState({
+                        currentNum: this.activeIndex,
+                        wholePage: this.slides.length
+                    });
                 },
             },
         });
-        let mySwiper2 = new Swiper('.first_banner', {
+        var mySwiper2 = new Swiper('.first_banner', {
             direction: 'horizontal',
             pagination: {
                 el: '.swiper-pagination',
@@ -73,12 +75,6 @@ class Home extends Component {
         //     top: 0,
         //     left: 0
         // });
-
-        // console.log(mySwiper1.activeIndex);
-        // console.log(mySwiper1.realIndex);
-        // this.setState({num: mySwiper1.activeIndex})
-
-
     }
 
     requestFullScreen() {
@@ -105,26 +101,30 @@ class Home extends Component {
         }
     }
 
+
     render() {
         return (
             <div>
                 <div className='whole'>
-
                     {
                         this.state.isFullScreen === false ?
-                            <label style={{cursor: 'pointer'}}>
-                                全屏显示
-                                <Icon className='whole_icon' onClick={() => {
+                            <div>
+                                <label style={{cursor: 'pointer'}}>全屏显示</label>
+                                <svg onClick={() => {
                                     this.requestFullScreen()
-                                }} type="fullscreen" theme="outlined"/>
-                            </label>
+                                }} className="icon_fullScreen" aria-hidden="true">
+                                    <use xlinkHref='#icon-quanping'></use>
+                                </svg>
+                            </div>
                             :
-                            <label style={{cursor: 'pointer'}}>
-                                全屏显示
-                                <Icon className='whole_icon' onClick={() => {
+                            <div>
+                                <label style={{cursor: 'pointer'}}>退出全屏</label>
+                                <svg onClick={() => {
                                     this.exitFullscreen()
-                                }} type="fullscreen-exit" theme="outlined"/>
-                            </label>
+                                }} className="icon_fullScreen" aria-hidden="true">
+                                    <use xlinkHref='#icon-quitquanping'></use>
+                                </svg>
+                            </div>
                     }
 
                 </div>
@@ -169,7 +169,10 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="next_btn">
-                        <Icon type="arrow-down" theme="outlined"/>
+                        {
+                            (this.state.currentNum + 1) === this.state.wholePage ? null :
+                                <Icon type="arrow-down" theme="outlined"/>
+                        }
                     </div>
                 </div>
             </div>
