@@ -5,6 +5,7 @@ import 'swiper/dist/css/swiper.css'
 import {Icon} from 'antd'
 import Personal from './personal/personal'
 import History from './history/history'
+import FootPrint from './footprint/footprint'
 import Connect from './connect/connect'
 
 import welcome_top from '../images/welcome/welcome_top.jpg'
@@ -161,7 +162,10 @@ class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="swiper-slide" style={{background: '#333333', opacity: '0.6'}}>
+                        <div className="swiper-slide">
+                            <FootPrint currentNum={this.state.currentNum}/>
+                        </div>
+                        <div className="swiper-slide" style={{background: '#333333', opacity: '0.7'}}>
                             <History currentNum={this.state.currentNum}/>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333', opacity: '0.9'}}>

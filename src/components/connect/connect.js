@@ -15,7 +15,7 @@ export default class Connect extends Component {
     }
 
     render() {
-        let isCurrentPage = (this.props.currentNum === 2);
+        let isCurrentPage = (this.props.currentNum === 3);
         return (
             <div>
                 <div className='main_title'>
