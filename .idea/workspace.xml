@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35418728-1387-4d8a-8817-04bc6bbd9df7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/connect/connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/connect/connect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/history/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/history/history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footprint/footprint.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footprint/footprint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/personal/personal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/personal/personal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/footprint/footprint.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/footprint/footprint.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -89,23 +87,23 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="6" />
-          <entry key="js" value="4480" />
-          <entry key="scss" value="3393" />
+          <entry key="js" value="5788" />
+          <entry key="scss" value="3666" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="6" />
-          <entry key="JavaScript" value="4480" />
-          <entry key="SCSS" value="3393" />
+          <entry key="JavaScript" value="5788" />
+          <entry key="SCSS" value="3666" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
           <entry key="html" value="2" />
-          <entry key="js" value="24" />
-          <entry key="json" value="1" />
+          <entry key="js" value="27" />
+          <entry key="json" value="2" />
           <entry key="png" value="1" />
           <entry key="scss" value="12" />
         </counts>
@@ -115,8 +113,8 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="24" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="27" />
           <entry key="SCSS" value="12" />
         </counts>
       </usages-collector>
@@ -124,11 +122,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/footprint/footprint.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="443">
+              <caret line="122" column="84" selection-start-line="122" selection-start-column="71" selection-end-line="122" selection-end-column="84" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/css/footprint/footprint.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="133" column="114" selection-start-line="133" selection-start-column="51" selection-end-line="133" selection-end-column="114" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -137,37 +165,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/footprint/footprint.scss">
+        <entry file="file://$PROJECT_DIR$/src/components/personal/personal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/footprint/mapConfig.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="164" column="53" selection-start-line="164" selection-start-column="53" selection-end-line="164" selection-end-column="53" />
+            <state relative-caret-position="374">
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -257,7 +258,6 @@
         <option value="$PROJECT_DIR$/src/css/history.scss" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/css/history/history.scss" />
-        <option value="$PROJECT_DIR$/src/components/personal/personal.js" />
         <option value="$PROJECT_DIR$/src/css/personal/personal.scss" />
         <option value="$PROJECT_DIR$/src/css/connect/connect.scss" />
         <option value="$PROJECT_DIR$/src/css/home.scss" />
@@ -265,8 +265,9 @@
         <option value="$PROJECT_DIR$/src/components/connect/connect.js" />
         <option value="$PROJECT_DIR$/src/components/footprint/mapConfig.js" />
         <option value="$PROJECT_DIR$/src/components/home.js" />
-        <option value="$PROJECT_DIR$/src/css/footprint/footprint.scss" />
+        <option value="$PROJECT_DIR$/src/components/personal/personal.js" />
         <option value="$PROJECT_DIR$/src/components/footprint/footprint.js" />
+        <option value="$PROJECT_DIR$/src/css/footprint/footprint.scss" />
       </list>
     </option>
   </component>
@@ -349,6 +350,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="history" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-personal_website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-personal_website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="personal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-personal_website" type="b2602c69:ProjectViewProjectNode" />
@@ -498,12 +506,12 @@
       <workItem from="1536026865248" duration="6655000" />
       <workItem from="1536044754146" duration="6872000" />
       <workItem from="1536216452396" duration="1177000" />
-      <workItem from="1536635207133" duration="38884000" />
+      <workItem from="1536635207133" duration="47339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111978000" />
+    <option name="totallyTimeSpent" value="120433000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,7 +526,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.45698926" visible="true" weight="0.24384432" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.45698926" weight="0.24384432" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5430108" side_tool="true" weight="0.15726767" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -538,7 +546,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.45698926" visible="true" weight="0.15726767" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.45698926" visible="true" weight="0.24384432" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5430108" side_tool="true" weight="0.15726767" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -565,15 +573,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/redux/reducers/counter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/api/user.json" />
-    <entry file="file://$PROJECT_DIR$/src/redux/build.js" />
     <entry file="file://$PROJECT_DIR$/src/redux/actions/counter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -782,16 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/personal/personal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="41" lean-forward="true" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/history/history.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -826,37 +815,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/home.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/.4.1.0@echarts/map/js/china-contour.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="164" column="53" selection-start-line="164" selection-start-column="53" selection-end-line="164" selection-end-column="53" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/.4.1.0@echarts/map/js/province/sichuan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/.4.1.0@echarts/map/json/province/sichuan.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/personal/personal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/components/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/footprint/footprint.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="208">
+          <caret line="133" column="114" selection-start-line="133" selection-start-column="51" selection-end-line="133" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/footprint/footprint.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="443">
+          <caret line="122" column="84" selection-start-line="122" selection-start-column="71" selection-end-line="122" selection-end-column="84" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/footprint/footprint.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
         </state>
       </provider>
     </entry>

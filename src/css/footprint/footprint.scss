@@ -1,8 +1,56 @@
+.foot_txt_div {
+  width: 40vw;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  //left: -50vw;
+  left: 0;
+  transform: translateY(-50%);
+  color: transparent;
+  letter-spacing: 5px;
+  transition: all 3s ease-in-out;
+
+  .foot_title {
+    width: 60%;
+    font-size: 45px;
+    font-weight: lighter;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .foot_article_div {
+    position: absolute;
+    top: 15%;
+    left: 0;
+
+    .foot_article {
+      //letter-spacing: 2em;
+      text-indent: 2em;
+      font-size: 23px;
+      font-weight: lighter;
+
+    }
+  }
+
+}
+.foot_article_div_active {
+  color: #ffffff;
+  left: 5%;
+}
+
 .myEcharts {
   position: absolute;
   top: 50%;
-  right: -10%;
+  left: 60%;
   transform: translateY(-50%);
   z-index: 10;
+  opacity: 0;
+  transition: all 3s ease-in-out;
+}
+.echart_active {
   opacity: 1;
+  left: 40%;
 }
