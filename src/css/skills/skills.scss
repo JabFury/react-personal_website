@@ -1,0 +1,208 @@
+.skills_bg {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .bg {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: #333333;
+    opacity: 0.9;
+
+    .skills_title {
+      width: 3vw;
+      position: absolute;
+      top: 5%;
+      left: 7%;
+      color: #ffffff;
+      font-size: 4em;
+      font-weight: lighter;
+      letter-spacing: 5px;
+    }
+  }
+
+  .skills_div {
+    width: 80vw;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    left: 15vw;
+
+    .web_div {
+      width: 18vh;
+      height: 18vh;
+      border-radius: 18vh;
+      line-height: 18vh;
+      border: 1.5px solid #ffffff;
+      box-sizing: border-box;
+      text-align: center;
+      position: absolute;
+      top: 34vh;
+      left: 12vh;
+
+      .skills_line {
+        width: 1.5px;
+        height: 13vh;
+        position: absolute;
+        background: #ffffff;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .skills_line_top {
+        top: -13vh;
+      }
+      .skills_line_bottom {
+        bottom: -13vh;
+      }
+    }
+    .double_title_div {
+      width: 14vh;
+      height: 14vh;
+      border-radius: 14vh;
+      border: 1.5px solid #ffffff;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .css_div {
+      position: absolute;
+      bottom: 11vh;
+      left: 14vh;
+    }
+
+    .other_div {
+      position: absolute;
+      top: 7vh;
+      left: 14vh;
+    }
+    .js_div {
+      position: absolute;
+      top: 36vh;
+      left: 43vh;
+    }
+
+    .rn_inform_div {
+      width: 47vh;
+      height: 10vh;
+      position: absolute;
+      //top: 28vh;
+      top:32.5%;
+      left: 97vh;
+    }
+
+    .react_inform_div {
+      width: 47vh;
+      height: 10vh;
+      position: absolute;
+      //top: 38.5vh;
+      top:44%;
+      left: 97vh;
+    }
+
+    .vue_inform_div {
+      width: 47vh;
+      height: 10vh;
+      position: absolute;
+      //top: 49.5vh;
+      top:56%;
+      left: 97vh;
+    }
+
+  }
+
+  .web_txt {
+    font-weight: lighter;
+    font-size: 2em;
+    color: #ffffff;
+  }
+  .double_txt {
+    font-weight: lighter;
+    font-size: 1.5em;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .skills_line_right {
+    width: 22vh;
+    height: 1.5px;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: -22vh;
+    transform: translateY(-50%);
+  }
+
+  //分支
+  .border_div {
+    width: 10vh;
+    height: 20vh;
+    border-top: 1.5px solid #ffffff;
+    border-left: 1.5px solid #ffffff;
+    border-bottom: 1.5px solid #ffffff;
+    box-sizing: border-box;
+    position: absolute;
+  }
+  .other_border_div {
+    top: 4.5vh;
+    left: 40vh;
+  }
+  .js_border_div {
+    top: 33vh;
+    left: 69vh;
+  }
+  .css_border_div {
+    bottom: 7.5vh;
+    left: 40vh;
+  }
+
+  //文字
+  .skills_label {
+    font-size: 2em;
+    font-weight: lighter;
+    color: #ffffff;
+    position: absolute;
+  }
+  .git_txt {
+    top: -18px;
+    right: -28px;
+  }
+  .adobe_txt {
+    //width: 100%;
+    bottom: -15px;
+    right: -165px;
+  }
+  .linux_txt {
+    top: -15px;
+    right: -55px;
+  }
+  .xiang_txt {
+    top: -15px;
+    right: -110px;
+  }
+  .antd_txt {
+    bottom: -15px;
+    right: -265px;
+  }
+  .rn_txt {
+    top: -15px;
+    right: -120px;
+  }
+  .vue_txt {
+    bottom: -15px;
+    right: -60px;
+  }
+  .react_txt {
+    top: -15px;
+    right: -80px;
+  }
+
+  //说明文字
+  .skills_inform_txt {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #ffffff;
+    position: absolute;
+  }
+}

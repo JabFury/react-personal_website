@@ -4,8 +4,11 @@ import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.css'
 import {Icon} from 'antd'
 import Personal from './personal/personal'
+import PhotoWall from './personal/photoWall'
 import History from './history/history'
 import FootPrint from './footprint/footprint'
+import Skills from './skills/skills'
+
 import Connect from './connect/connect'
 
 import welcome_top from '../images/welcome/welcome_top.jpg'
@@ -53,6 +56,26 @@ class Home extends Component {
             },
         });
         var mySwiper2 = new Swiper('.first_banner', {
+            direction: 'horizontal',
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.first_next',
+                prevEl: '.first_prev',
+            },
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //     snapOnRelease: false,
+            // },
+            speed: 600,
+            observer: true,
+            keyboard: true,
+            grabCursor: true,
+            allowTouchMove: true,
+        });
+
+        var mySwiper3 = new Swiper('.third_banner', {
             direction: 'horizontal',
             pagination: {
                 el: '.swiper-pagination',
@@ -151,7 +174,9 @@ class Home extends Component {
                                     <div className="swiper-slide" style={{background: 'transparent'}}>
                                         <Personal/>
                                     </div>
-                                    <div className="swiper-slide" style={{background: '#ff2d4d'}}>child 2</div>
+                                    <div className="swiper-slide" style={{background: '#fff6e4'}}>
+                                        <PhotoWall/>
+                                    </div>
                                     <div className="swiper-slide" style={{background: '#ba93ce'}}>child 3</div>
                                 </div>
                                 <div className='first_prev'>
@@ -168,7 +193,26 @@ class Home extends Component {
                         <div className="swiper-slide" style={{background: '#333333', opacity: '0.7'}}>
                             <History currentNum={this.state.currentNum}/>
                         </div>
-                        <div className="swiper-slide" style={{background: '#333333', opacity: '0.9'}}>
+                        <div className="swiper-slide">
+                            <div className="third_banner">
+                                <div className="swiper-wrapper">
+                                    <div className="swiper-slide" style={{background: 'transparent'}}>
+                                        <Skills/>
+                                    </div>
+                                    <div className="swiper-slide" style={{background: '#66dba3'}}>
+                                        child 2
+                                    </div>
+                                    <div className="swiper-slide" style={{background: '#69c2ff'}}>child 3</div>
+                                </div>
+                                <div className='first_prev'>
+                                    <Icon type="left" theme="outlined"/>
+                                </div>
+                                <div className='first_next'>
+                                    <Icon type="right" theme="outlined"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="swiper-slide" style={{background: '#333333'}}>
                             <Connect currentNum={this.state.currentNum}/>
                         </div>
                     </div>

@@ -1,0 +1,59 @@
+.photo_container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .bg_wall {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+
+  .photo_wall {
+    width: 60vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+
+    .photo_div {
+      width: 170px;
+      height: 120px;
+      //border: 1px solid black;
+      //box-sizing: border-box;
+      transition: all 0.1s ease-in-out;
+    }
+    .photo_div:hover {
+      width: 180px;
+      height: 130px;
+      box-shadow: 5px 5px 8px #cccccc;
+      z-index: 20;
+    }
+  }
+
+
+}
+.photo_bg_div{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.8;
+  background: #000000;
+}
+.picture_show_div {
+  width: 40vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+img {
+  width: 100%;
+  height:100%
+}
