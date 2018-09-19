@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="35418728-1387-4d8a-8817-04bc6bbd9df7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/skills/skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skills/skills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/skills/skills.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/skills/skills.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -88,14 +86,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="6" />
+          <entry key="html" value="17" />
           <entry key="js" value="8471" />
           <entry key="scss" value="6041" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="6" />
+          <entry key="HTML" value="17" />
           <entry key="JavaScript" value="8471" />
           <entry key="SCSS" value="6041" />
         </counts>
@@ -103,9 +101,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="2" />
+          <entry key="html" value="4" />
           <entry key="jpg" value="3" />
-          <entry key="js" value="40" />
+          <entry key="js" value="41" />
           <entry key="json" value="2" />
           <entry key="png" value="1" />
           <entry key="scss" value="17" />
@@ -114,10 +112,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="2" />
+          <entry key="HTML" value="4" />
           <entry key="Image" value="4" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="40" />
+          <entry key="JavaScript" value="41" />
           <entry key="SCSS" value="17" />
         </counts>
       </usages-collector>
@@ -125,11 +123,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/skills/skills.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="138" column="35" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
+            <state relative-caret-position="401">
+              <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -255,7 +271,6 @@
         <option value="$PROJECT_DIR$/src/css/router.scss" />
         <option value="$PROJECT_DIR$/src/router/router.js" />
         <option value="$PROJECT_DIR$/src/css/history.scss" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/css/history/history.scss" />
         <option value="$PROJECT_DIR$/src/css/personal/personal.scss" />
         <option value="$PROJECT_DIR$/src/css/connect/connect.scss" />
@@ -272,6 +287,7 @@
         <option value="$PROJECT_DIR$/src/components/home.js" />
         <option value="$PROJECT_DIR$/src/components/skills/skills.js" />
         <option value="$PROJECT_DIR$/src/css/skills/skills.scss" />
+        <option value="$PROJECT_DIR$/src/index.html" />
       </list>
     </option>
   </component>
@@ -321,17 +337,6 @@
               <item name="react-personal_website" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-personal_website" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="react-personal_website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-personal_website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-personal_website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-personal_website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -360,19 +365,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/images/home" />
-      <recent name="$PROJECT_DIR$/src/components/icons" />
-      <recent name="$PROJECT_DIR$/src/css" />
-      <recent name="E:\myself\react-personal_website\src\css" />
-      <recent name="E:\myself\react-personal_website\src\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/css/history" />
       <recent name="$PROJECT_DIR$/src/css/welcome" />
       <recent name="$PROJECT_DIR$/src/images/welcome" />
       <recent name="E:\works\myself\react-demo\src\images" />
-      <recent name="E:\works\myself\react-demo\src\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/images/home" />
+      <recent name="$PROJECT_DIR$/src/components/icons" />
+      <recent name="$PROJECT_DIR$/src/css" />
+      <recent name="E:\myself\react-personal_website\src\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -456,12 +461,12 @@
       <workItem from="1536044754146" duration="6872000" />
       <workItem from="1536216452396" duration="1177000" />
       <workItem from="1536635207133" duration="71525000" />
-      <workItem from="1537259158431" duration="6748000" />
+      <workItem from="1537259158431" duration="7832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151367000" />
+    <option name="totallyTimeSpent" value="152451000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -476,7 +481,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.45698926" weight="0.24384432" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.45698926" visible="true" weight="0.24384432" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5430108" side_tool="true" weight="0.24384432" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -490,7 +495,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50119144" side_tool="true" weight="0.49178082" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.31643835" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31643835" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -523,24 +528,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/redux/reducers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/router/Bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1131">
           <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -611,13 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1540">
           <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -795,8 +779,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/skills/skills.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="138" column="35" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
+        <state relative-caret-position="401">
+          <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
