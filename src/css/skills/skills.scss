@@ -43,17 +43,20 @@
 
       .skills_line {
         width: 1.5px;
-        height: 13vh;
+        height: 0;
         position: absolute;
         background: #ffffff;
         left: 50%;
         transform: translateX(-50%);
+        transition: all 2s ease-in-out;
       }
       .skills_line_top {
-        top: -13vh;
+        height: 13vh;
+        bottom: 18vh;
       }
       .skills_line_bottom {
-        bottom: -13vh;
+        height: 13vh;
+        top: 18vh;
       }
     }
     .double_title_div {
@@ -63,22 +66,26 @@
       border: 1.5px solid #ffffff;
       box-sizing: border-box;
       text-align: center;
+      transition: all 1s ease-in-out;
+      transition-delay: 2s;
+      opacity: 0;
+      position: absolute;
     }
     .css_div {
-      position: absolute;
       bottom: 11vh;
       left: 14vh;
+      opacity: 1;
     }
 
     .other_div {
-      position: absolute;
       top: 7vh;
       left: 14vh;
+      opacity: 1;
     }
     .js_div {
-      position: absolute;
       top: 36vh;
       left: 43vh;
+      opacity: 1;
     }
 
     .rn_inform_div {
@@ -86,7 +93,7 @@
       height: 10vh;
       position: absolute;
       //top: 28vh;
-      top:32.5%;
+      top: 32.5%;
       left: 97vh;
     }
 
@@ -95,7 +102,7 @@
       height: 10vh;
       position: absolute;
       //top: 38.5vh;
-      top:44%;
+      top: 44%;
       left: 97vh;
     }
 
@@ -104,7 +111,7 @@
       height: 10vh;
       position: absolute;
       //top: 49.5vh;
-      top:56%;
+      top: 56%;
       left: 97vh;
     }
 
@@ -125,84 +132,142 @@
     transform: translate(-50%, -50%);
   }
   .skills_line_right {
+    width: 0;
+    height: 1.5px;
+    background: transparent;
+    position: absolute;
+    transition: all 2s ease-in-out;
+    transition-delay: 3s;
+
+  }
+  .linux_line_active {
     width: 22vh;
+    top: 15%;
+    left: 28vh;
+    background: #ffffff;
+  }
+  .react_line_active {
+    width: 22vh;
+    top: 48%;
+    left: 57vh;
+    background: #ffffff;
+  }
+  .sass_line_active {
+    width: 22vh;
+    top: 80%;
+    left: 28vh;
+    background: #ffffff;
+  }
+
+  //'web前端'右边连线
+  .web_line_right {
+    width: 0;
     height: 1.5px;
     background: #ffffff;
     position: absolute;
     top: 50%;
-    right: -22vh;
+    left: 18vh;
     transform: translateY(-50%);
+    transition: all 2s ease-in-out;
+  }
+  .web_line_right_move {
+    width: 13vh;
   }
 
   //分支
   .border_div {
     width: 10vh;
     height: 20vh;
-    border-top: 1.5px solid #ffffff;
-    border-left: 1.5px solid #ffffff;
-    border-bottom: 1.5px solid #ffffff;
+    border-color: transparent;
     box-sizing: border-box;
     position: absolute;
+    transition: all 1s ease-in-out;
+    transition-delay: 5s;
   }
   .other_border_div {
     top: 4.5vh;
     left: 40vh;
+    border-top: 1.5px solid #ffffff;
+    border-left: 1.5px solid #ffffff;
+    border-bottom: 1.5px solid #ffffff;
   }
   .js_border_div {
     top: 33vh;
     left: 69vh;
+    border-top: 1.5px solid #ffffff;
+    border-left: 1.5px solid #ffffff;
+    border-bottom: 1.5px solid #ffffff;
   }
   .css_border_div {
     bottom: 7.5vh;
     left: 40vh;
+    border-top: 1.5px solid #ffffff;
+    border-left: 1.5px solid #ffffff;
+    border-bottom: 1.5px solid #ffffff;
   }
 
   //文字
   .skills_label {
     font-size: 2em;
     font-weight: lighter;
-    color: #ffffff;
+    color: transparent;
     position: absolute;
+    transition: all 1s ease-in-out;
+    transition-delay: 6s;
   }
   .git_txt {
     top: -18px;
     right: -28px;
+    color: #ffffff;
   }
   .adobe_txt {
     //width: 100%;
     bottom: -15px;
     right: -165px;
+    color: #ffffff;
   }
   .linux_txt {
     top: -15px;
     right: -55px;
+    color: #ffffff;
   }
   .xiang_txt {
     top: -15px;
     right: -110px;
+    color: #ffffff;
   }
   .antd_txt {
     bottom: -15px;
     right: -265px;
+    color: #ffffff;
   }
   .rn_txt {
     top: -15px;
     right: -120px;
+    color: #ffffff;
   }
   .vue_txt {
     bottom: -15px;
     right: -60px;
+    color: #ffffff;
   }
   .react_txt {
     top: -15px;
     right: -80px;
+    color: #ffffff;
   }
 
   //说明文字
   .skills_inform_txt {
     font-size: 1.5em;
     font-weight: lighter;
-    color: #ffffff;
+    color: transparent;
     position: absolute;
+    transition: all 2s ease-in-out;
+    transition-delay: 7s;
+  }
+  .inform_txt_active {
+
+    color: #ffffff;
   }
 }

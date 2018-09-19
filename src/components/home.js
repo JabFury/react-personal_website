@@ -197,7 +197,7 @@ class Home extends Component {
                             <div className="third_banner">
                                 <div className="swiper-wrapper">
                                     <div className="swiper-slide" style={{background: 'transparent'}}>
-                                        <Skills/>
+                                        <Skills currentNum={this.state.currentNum}/>
                                     </div>
                                     <div className="swiper-slide" style={{background: '#66dba3'}}>
                                         child 2
