@@ -20,6 +20,17 @@
       font-weight: lighter;
       letter-spacing: 5px;
     }
+
+    .en_title {
+      width: 2vw;
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      color: #ffffff;
+      font-size: 4.3em;
+      font-weight: lighter;
+      letter-spacing: 5px;
+    }
   }
 
   .skills_div {
@@ -257,6 +268,14 @@
     color: #ffffff;
   }
 
+
+  //英语主题时响应式布局的文字
+  .en_label {
+    top: -15px;
+    right: -170px;
+    color: #ffffff;
+  }
+
   //说明文字
   .skills_inform_txt {
     font-size: 1.5em;
@@ -266,8 +285,16 @@
     transition: all 2s ease-in-out;
     transition-delay: 7s;
   }
+  //英语主题时的说明文字
+  .en_inform_txt {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: transparent;
+    position: absolute;
+    transition: all 2s ease-in-out;
+    transition-delay: 7s;
+  }
   .inform_txt_active {
-
     color: #ffffff;
   }
 }

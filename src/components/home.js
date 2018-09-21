@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import '../css/home.scss'
 import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.css'
-import {Icon} from 'antd'
+import {Icon, Button} from 'antd'
 import Personal from './personal/personal'
 import PhotoWall from './personal/photoWall'
 import History from './history/history'
@@ -15,6 +15,8 @@ import welcome_top from '../images/welcome/welcome_top.jpg'
 import welcome_bottom from '../images/welcome/welcome_bottom.jpg'
 import home_bg from "../images/home/home_bg.jpg";
 
+import chinese_data from '../common/chinese_data'
+import english_data from '../common/english_data'
 
 class Home extends Component {
     constructor(props) {
@@ -24,7 +26,10 @@ class Home extends Component {
             isHide: true,
             currentNum: 0,
             isFullScreen: false,
-            wholePage: null
+            wholePage: null,
+            thirdIndex: 0,
+            thirdWholePage: null,
+            isChinese: true
         }
     }
 
@@ -81,13 +86,21 @@ class Home extends Component {
                 el: '.swiper-pagination',
             },
             navigation: {
-                nextEl: '.first_next',
-                prevEl: '.first_prev',
+                nextEl: '.third_next',
+                prevEl: '.third_prev',
             },
             // scrollbar: {
             //     el: '.swiper-scrollbar',
             //     snapOnRelease: false,
             // },
+            on: {
+                slideChangeTransitionStart: function () {
+                    _this.setState({
+                        thirdIndex: this.activeIndex,
+                        thirdWholePage: this.slides.length
+                    });
+                },
+            },
             speed: 600,
             observer: true,
             keyboard: true,
@@ -127,13 +140,15 @@ class Home extends Component {
 
 
     render() {
+        let contentData = this.state.isChinese === true ? chinese_data : english_data;
         return (
             <div>
                 <div className='whole'>
                     {
                         this.state.isFullScreen === false ?
                             <div>
-                                <label style={{cursor: 'pointer'}}>全屏显示</label>
+                                <label
+                                    style={{cursor: 'pointer'}}>{this.state.isChinese === true ? '全屏显示' : 'FullScreen'}</label>
                                 <svg onClick={() => {
                                     this.requestFullScreen()
                                 }} className="icon_fullScreen" aria-hidden="true">
@@ -142,7 +157,8 @@ class Home extends Component {
                             </div>
                             :
                             <div>
-                                <label style={{cursor: 'pointer'}}>退出全屏</label>
+                                <label
+                                    style={{cursor: 'pointer'}}>{this.state.isChinese === true ? '退出全屏' : 'ExitFullScreen'}</label>
                                 <svg onClick={() => {
                                     this.exitFullscreen()
                                 }} className="icon_fullScreen" aria-hidden="true">
@@ -152,6 +168,27 @@ class Home extends Component {
                     }
 
                 </div>
+
+                {
+                    this.state.isChinese === false ?
+                        <div className='change_en' onClick={() => {
+                            this.setState({isChinese: true})
+                        }}>
+                            <label style={{cursor: 'pointer'}}>
+                                切换成中文
+                            </label>
+                        </div>
+                        :
+                        <div className='change_zh' onClick={() => {
+                            this.setState({isChinese: false})
+                        }}>
+                            <label style={{cursor: 'pointer'}}>
+                                View in English
+                            </label>
+                        </div>
+                }
+
+
                 {
                     this.state.isHide === false ? null :
                         <div className={['donghua1', this.state.isLoad === true ? 'activeMove1' : null].join(' ')}>
@@ -172,7 +209,7 @@ class Home extends Component {
                             <div className="first_banner">
                                 <div className="swiper-wrapper">
                                     <div className="swiper-slide" style={{background: 'transparent'}}>
-                                        <Personal/>
+                                        <Personal contentData={contentData.introduceData}/>
                                     </div>
                                     <div className="swiper-slide" style={{background: '#fff6e4'}}>
                                         <PhotoWall/>
@@ -188,32 +225,44 @@ class Home extends Component {
                             </div>
                         </div>
                         <div className="swiper-slide">
-                            <FootPrint currentNum={this.state.currentNum}/>
+                            <FootPrint contentData={contentData.footPointData} currentNum={this.state.currentNum}
+                                       isChinese={this.state.isChinese}/>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333', opacity: '0.7'}}>
-                            <History currentNum={this.state.currentNum}/>
+                            <History contentData={contentData.history.pageData} currentNum={this.state.currentNum}/>
                         </div>
                         <div className="swiper-slide">
                             <div className="third_banner">
                                 <div className="swiper-wrapper">
                                     <div className="swiper-slide" style={{background: 'transparent'}}>
-                                        <Skills currentNum={this.state.currentNum}/>
+                                        <Skills contentData={contentData.skills} isChinese={this.state.isChinese}
+                                                currentNum={this.state.currentNum} thirdIndex={this.state.thirdIndex}/>
                                     </div>
                                     <div className="swiper-slide" style={{background: '#66dba3'}}>
                                         child 2
                                     </div>
                                     <div className="swiper-slide" style={{background: '#69c2ff'}}>child 3</div>
                                 </div>
-                                <div className='first_prev'>
+                                <div className='first_prev third_prev'>
                                     <Icon type="left" theme="outlined"/>
                                 </div>
-                                <div className='first_next'>
+                                <div className='first_next third_next'>
                                     <Icon type="right" theme="outlined"/>
+                                </div>
+                                <div className='third_next more_btn'>
+                                    {
+                                        (this.state.thirdIndex + 1) === this.state.thirdWholePage ? null :
+                                            <div>
+                                                {this.state.isChinese == true ? '了解更多' : 'More'}
+                                                < Icon type="arrow-right" theme="outlined"/>
+                                            </div>
+
+                                    }
                                 </div>
                             </div>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333'}}>
-                            <Connect currentNum={this.state.currentNum}/>
+                            <Connect currentNum={this.state.currentNum} isChinese={this.state.isChinese}/>
                         </div>
                     </div>
                     <div className="next_btn">
@@ -222,9 +271,9 @@ class Home extends Component {
                                 <Icon type="arrow-down" theme="outlined"/>
                         }
                     </div>
+
                 </div>
             </div>
-
         )
     }
 }

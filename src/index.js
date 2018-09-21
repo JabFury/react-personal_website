@@ -19,7 +19,7 @@ function renderWithHotReload(RootElement) {
     ReactDom.render(
         <AppContainer>
             <Provider store={store}>
-                { <RootElement /> }
+                    {<RootElement/>}
             </Provider>
         </AppContainer>,
         document.getElementById('app')

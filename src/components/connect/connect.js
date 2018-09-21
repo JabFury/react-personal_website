@@ -16,22 +16,38 @@ export default class Connect extends Component {
 
     render() {
         let isCurrentPage = (this.props.currentNum === 4);
+        let isChinese = this.props.isChinese;
         return (
             <div>
                 <div className='main_title'>
                     <div className={['main_title_div', isCurrentPage === true ? 'main_active' : null].join(' ')}>
-                        <label className='title_label'>交</label>
-                        <label className='title_label'>个</label>
-                        <label className='title_label'>朋</label>
-                        <label className='title_label'>友</label>
-                        <label className='title_label'>吧</label>
+                        {
+                            isChinese === true ?
+                                <div>
+                                    <label className='title_label'>交</label>
+                                    <label className='title_label'>个</label>
+                                    <label className='title_label'>朋</label>
+                                    <label className='title_label'>友</label>
+                                    <label className='title_label'>吧</label>
+                                </div>
+                                :
+                                <label
+                                    className={['en_title_label', isCurrentPage === true ? 'en_active' : null].join(' ')}>I
+                                    want to make a friend with You</label>
+                        }
+
                     </div>
                     <div className={['poem', isCurrentPage === true ? 'poem_active' : null].join(' ')}>
-                        <label>——相知何必旧，倾盖定前言</label>
+                        {
+                            isChinese === true ?
+                                <label>——相知何必旧，倾盖定前言</label> :
+                                <label style={{fontSize: '20px'}}>——A friend in court is better than a penny in
+                                    purse.</label>
+                        }
                     </div>
                 </div>
                 <div className={['connect_header', isCurrentPage === true ? 'connectHeader_active' : null].join(' ')}>
-                    <label className='connect_title'>你可以通过以下方式找到我</label>
+                    <label className='connect_title'>{isChinese === true ? '你可以通过以下方式找到我' : 'Contect Me With'}</label>
 
                     <div className='icon_div'>
                         <a target="_blank" href='http://wpa.qq.com/msgrd?v=3&uin=47890165&menu=yes'>

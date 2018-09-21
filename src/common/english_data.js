@@ -1,0 +1,36 @@
+module.exports = {
+    introduceData: {
+        title: 'I am JiaFeng Cheng',
+        intro_1: 'Front End Engineer of 22',
+        intro_2: 'basketball foods music',
+        intro_3: 'Pursue new things and enjoy wonderful visual perception',
+    },
+    footPointData : {
+        title: 'I Love Traveling',
+        foot_1 :'I like to travel all over the country, taste different local flavors of snacks. Enjoy walking on the most beautiful mountains so they can be seen by me. The feeling recorded by the machine.',
+        foot_2 : 'I love the beach decorated with blue sky and blue sky. Lying on it, I feel the warmth of the sun and the coolness of the sea water. At night, a streak of moonlight reaches the horizon where the sun rises the next day.',
+        foot_3 : 'I also enjoy the vast grassland, envy lazy cattle and sheep to eat full sleep, sleep on the leisure life. Riding on the back of the horse, as if he is also a ferocious hunter, left hand yellow, right chuang-cang, a thousand riding flat hill.',
+        foot_4 : 'To the head of the orange island, to hit the middle of the water, waves to stop the boat; The yellow crane tower stands alone, overlooking the hanyang tree in qingchuan calendar, feeling the parrot continent where there is green grass.',
+        foot_5 : 'Finally ,I like to experience buddhist culture, visit leshan Buddha and lingshan Buddha. I understand Taoist customs on mount qingcheng and hear about the dedication spirit of sakyamuni and nine-color deer on mogao grottoes',
+    },
+    history: {
+        pageData : [
+            {iconUrl: '#icon-chusheng', type: 'shu_dan', year: '1996.2', txt: 'Born'},
+            {iconUrl: '#icon-xiaoxue', type: 'shu_shuang', year: '2002.9', txt: 'Went to Primary school'},
+            {iconUrl: '#icon-biye', type: 'shu_dan', year: '2008.6', txt: 'I was class leader for six years during school '},
+            {iconUrl: '#icon-pingpangqiu1', type: 'shu_shuang', year: '2009.8', txt: 'Join PingPang Competition'},
+            {iconUrl: '#icon-18', type: 'shu_dan', year: '2014.2', txt: 'Be an adult'},
+            {iconUrl: '#icon-daxue1', type: 'shu_shuang', year: '2014.9', txt: 'Went to Collage, major in SoftWare Engineering'},
+            {iconUrl: '#icon-diannao', type: 'shu_dan', year: '2016.7', txt: 'Began Web front development'},
+            {iconUrl: '#icon-shixi', type: 'shu_shuang', year: '2017.9', txt: 'Trainee'},
+            {iconUrl: '#icon-tubiao64', type: 'shu_dan', year: '2018.6', txt: 'Working'},
+            {iconUrl: '#icon-more', type: 'shu_shuang', txt: 'To be Continue'},
+        ]
+    },
+    skills : {
+        rn:'Based on WebPack, I mainly developed the company\'s project android, and developed, packaged, and link tripartite plug-ins. Develop mobile live broadcast APP and video APP',
+        reactTitle:'Based on WebPack, we can configure the React family bucket project from "0", use the React to develop the product backstage management system, and manage the company\'s minjie project management project. This website is also developed with the React',
+        vue:'Based on WebPack, I am familiar with Vue. Js family bucket. I was mainly responsible for the official website of the product of the research and development project, the interface of mobile phone adaptation, and the WeChat sharing page of mobile phone'
+    }
+
+};

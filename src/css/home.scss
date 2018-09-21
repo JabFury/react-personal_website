@@ -122,7 +122,7 @@ body {
   position: absolute;
   top: 1%;
   right:1%;
-  font-size: 16px;
+  font-size: 1.4em;
   color: #ffffff;
   font-weight: lighter;
   cursor: pointer;
@@ -227,6 +227,50 @@ img {
   //background: #666666;
   //opacity: 0.1;
   color: #ffffff;
+}
+
+.more_btn {
+  width: 7vw;
+  height: 5vh;
+  //background: aquamarine;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  z-index: 99;
+  text-align: center;
+  line-height: 5vh;
+  color: #ffffff;
+  font-size: 1.4em;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+//切换中英文
+.change_en {
+  width: 110px;
+  height: 3vh;
+  color: #ffffff;
+  position: absolute;
+  top :1%;
+  right: 8.5%;
+  font-size: 1.4em;
+  font-weight: lighter;
+  line-height: 3vh;
+  cursor: pointer;
+  z-index: 10;
+}
+.change_zh {
+  width: 110px;
+  height: 3vh;
+  color: #ffffff;
+  position: absolute;
+  top :1%;
+  right: 8.5%;
+  font-size: 1.4em;
+  font-weight: lighter;
+  line-height: 3vh;
+  cursor: pointer;
+  z-index: 10;
 }
 
 

@@ -9,17 +9,20 @@ export default class Skills extends Component {
 
     render() {
         let isCurrentPage = (this.props.currentNum === 3);
+        let contentData = this.props.contentData;
+        let isChinese = this.props.isChinese;
         return (
             <div className='skills_bg'>
                 <div className='bg'>
-                    <label className='skills_title'>我所掌握的技能</label>
+                    <label
+                        className={isChinese === true ? 'skills_title' : 'en_title'}>{isChinese === true ? '我所掌握的技能' : " I'm Skilled in"}</label>
                 </div>
 
                 <div className='skills_div'>
                     <div className='web_div'>
                         <div
                             className={['skills_line', isCurrentPage === true ? 'skills_line_top' : null].join(' ')}></div>
-                        <label className='web_txt'>Web 前端</label>
+                        <label className='web_txt'>Web {isChinese === true ? '前端' : 'Front'}</label>
                         <div
                             className={['skills_line', isCurrentPage === true ? 'skills_line_bottom' : null].join(' ')}></div>
                         <div
@@ -28,7 +31,7 @@ export default class Skills extends Component {
 
 
                     <div className={['double_title_div', isCurrentPage === true ? 'other_div' : null].join(' ')}>
-                        <label className='double_txt'>其他</label>
+                        <label className='double_txt'>{isChinese === true ? '其他' : 'Other'}</label>
                     </div>
                     <div
                         className={['skills_line_right', isCurrentPage === true ? 'linux_line_active' : null].join(' ')}>
@@ -71,7 +74,7 @@ export default class Skills extends Component {
                     </div>
                     <div className={['border_div ', isCurrentPage === true ? 'css_border_div' : null].join(' ')}>
                         <label
-                            className={['skills_label ', isCurrentPage === true ? 'xiang_txt' : null].join(' ')}>响应式布局</label>
+                            className={['skills_label', isCurrentPage === true ? (isChinese === true ? 'xiang_txt' : 'en_label') : null].join(' ')}>{isChinese === true ? '响应式布局' : 'Responsive layout'}</label>
                         <label className={['skills_label ', isCurrentPage === true ? 'antd_txt' : null].join(' ')}>Antd
                             , ElementUI , BootStrap </label>
                     </div>
@@ -79,26 +82,20 @@ export default class Skills extends Component {
 
                     <div className='rn_inform_div'>
                         <label
-                            className={['skills_inform_txt', isCurrentPage === true ? 'inform_txt_active' : null].join(' ')}>
-                            基于WebPack，主要开发公司项目安卓端项目，
-                            研发、打包、link三方插件。研发手机直播APP，
-                            视频APP
+                            className={[isChinese === true ? 'skills_inform_txt' : 'en_inform_txt', isCurrentPage === true ? 'inform_txt_active' : null].join(' ')}>
+                            {contentData.rn}
                         </label>
                     </div>
                     <div className='react_inform_div'>
                         <label
-                            className={['skills_inform_txt', isCurrentPage === true ? 'inform_txt_active' : null].join(' ')}>
-                            基于WebPack，能够从'0'配置React全家桶项目，
-                            工作期间使用React研发产品后台管理系统，公司敏
-                            捷项目管 理项目，本官网也是用React开发的
+                            className={[isChinese === true ? 'skills_inform_txt' : 'en_inform_txt', isCurrentPage === true ? 'inform_txt_active' : null].join(' ')}>
+                            {contentData.reactTitle}
                         </label>
                     </div>
                     <div className='vue_inform_div'>
                         <label
-                            className={['skills_inform_txt', isCurrentPage === true ? 'inform_txt_active' : null].join(' ')}>
-                            基于WebPack，熟悉使用Vue.js全家桶，工作期间
-                            主要负责研发项目产品官网及手机适配界面， 手机
-                            微信分享页面
+                            className={[isChinese === true ? 'skills_inform_txt' : 'en_inform_txt', isCurrentPage === true ? 'inform_txt_active' : null].join(' ')}>
+                            {contentData.vue}
                         </label>
                     </div>
                 </div>

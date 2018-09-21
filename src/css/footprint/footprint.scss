@@ -1,5 +1,5 @@
 .foot_txt_div {
-  width: 40vw;
+  width: 50vw;
   height: 80vh;
   position: absolute;
   top: 50%;
@@ -27,11 +27,12 @@
     left: 0;
 
     .foot_article {
-      //letter-spacing: 2em;
-      text-indent: 2em;
       font-size: 1.8em;
       font-weight: lighter;
-
+    }
+    .en_article {
+      font-size: 1.4em;
+      font-weight: lighter;
     }
   }
 
@@ -41,10 +42,24 @@
   left: 5%;
 }
 
+//分享足迹标题
+.share_footPoint {
+  font-size: 2.5em;
+  color: transparent;
+  position: absolute;
+  top:15%;
+  left: 70%;
+  font-weight: lighter;
+  transition: all 3s ease-in-out;
+}
+.share_footPoint_active {
+  color: #ffffff;
+}
+
 .myEcharts {
   position: absolute;
   top: 50%;
-  left: 60%;
+  left: 65%;
   transform: translateY(-50%);
   z-index: 10;
   opacity: 0;
@@ -52,5 +67,5 @@
 }
 .echart_active {
   opacity: 1;
-  left: 40%;
+  left: 48%
 }

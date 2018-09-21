@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import '../../css/personal/personal.scss'
-import {Row, Col} from 'antd'
+
 class Personal extends Component {
     constructor(props) {
         super(props);
@@ -8,15 +8,16 @@ class Personal extends Component {
     }
 
     render() {
+        let contentData = this.props.contentData;
         return (
             <div className='personal_bg'>
                 <div className='inform_div'>
 
                     <div className='introduce'>
-                        <p style={{fontWeight:'lighter',marginBottom:'3vh',fontSize:'35px'}}>我是程嘉丰</p>
-                        <p>一个22岁的前端攻城狮</p>
-                        <p>篮球 美食 音乐</p>
-                        <p>追求新鲜事物，享受美妙视觉感悟</p>
+                        <p style={{fontWeight:'lighter',marginBottom:'3vh',fontSize:'35px'}}>{contentData.title}</p>
+                        <p>{contentData.intro_1}</p>
+                        <p>{contentData.intro_2}</p>
+                        <p>{contentData.intro_3}</p>
                     </div>
                     <div className='header_img'>
 
