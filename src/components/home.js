@@ -8,6 +8,7 @@ import PhotoWall from './personal/photoWall'
 import History from './history/history'
 import FootPrint from './footprint/footprint'
 import Skills from './skills/skills'
+import Experience from './skills/experience'
 
 import Connect from './connect/connect'
 
@@ -143,27 +144,33 @@ class Home extends Component {
         let contentData = this.state.isChinese === true ? chinese_data : english_data;
         return (
             <div>
-                <div className='whole'>
+                <div className='whole' style={(this.state.isFullScreen===true&&this.state.isChinese===false)?{width:'115px'}:{width:'90px'}}>
                     {
                         this.state.isFullScreen === false ?
                             <div>
-                                <label
-                                    style={{cursor: 'pointer'}}>{this.state.isChinese === true ? '全屏显示' : 'FullScreen'}</label>
                                 <svg onClick={() => {
                                     this.requestFullScreen()
                                 }} className="icon_fullScreen" aria-hidden="true">
                                     <use xlinkHref='#icon-quanping'></use>
                                 </svg>
+                                <label
+                                    style={{cursor: 'pointer'}}
+                                >
+                                    {this.state.isChinese === true ? '全屏显示' : 'FullScreen'}
+                                </label>
                             </div>
                             :
                             <div>
-                                <label
-                                    style={{cursor: 'pointer'}}>{this.state.isChinese === true ? '退出全屏' : 'ExitFullScreen'}</label>
                                 <svg onClick={() => {
                                     this.exitFullscreen()
                                 }} className="icon_fullScreen" aria-hidden="true">
                                     <use xlinkHref='#icon-quitquanping'></use>
                                 </svg>
+                                <label
+                                    style={{cursor: 'pointer'}}
+                                >
+                                    {this.state.isChinese === true ? '退出全屏' : 'ExitFullScreen'}
+                                </label>
                             </div>
                     }
 
@@ -238,10 +245,12 @@ class Home extends Component {
                                         <Skills contentData={contentData.skills} isChinese={this.state.isChinese}
                                                 currentNum={this.state.currentNum} thirdIndex={this.state.thirdIndex}/>
                                     </div>
-                                    <div className="swiper-slide" style={{background: '#66dba3'}}>
-                                        child 2
+                                    <div className="swiper-slide" style={{background: 'transparent'}}>
+                                        <Experience contentData={contentData.experience.enData}
+                                                    thirdIndex={this.state.thirdIndex}
+                                                    isChinese={this.state.isChinese}/>
                                     </div>
-                                    <div className="swiper-slide" style={{background: '#69c2ff'}}>child 3</div>
+                                    {/*<div className="swiper-slide" style={{background: '#69c2ff'}}>child 3</div>*/}
                                 </div>
                                 <div className='first_prev third_prev'>
                                     <Icon type="left" theme="outlined"/>

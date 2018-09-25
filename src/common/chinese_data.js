@@ -28,5 +28,12 @@ module.exports = {
         rn:'基于WebPack，主要开发公司项目安卓端项目， 研发、打包、link三方插件。研发手机直播APP， 视频APP',
         reactTitle:'基于WebPack，能够从\'0\'配置React全家桶项目， 工作期间使用React研发产品后台管理系统，公司敏 捷项目管 理项目，本官网也是用React开发的',
         vue:'基于WebPack，熟悉使用Vue.js全家桶，工作期间 主要负责研发项目产品官网及手机适配界面， 手机 微信分享页面\n'
+    },
+    experience : {
+        enData : [
+            {belong:'Better',title:'后台管理系统',text:'从\'0\'开始搭建完整一套React全家桶的项目，其中配置了Antd的UI框架， 数据从后台通过调用的接口返回，使用了封装过的Fetch方法。其功能有 管理员的登录注册，用户信息，课程信息，直播间信息，修改学校、老师的 认证状态等，同时通过获取到的直播推流地址可以进行查看正在直播的直播间 信息，并根据其是否违规作出相应的禁言、强制关闭直播。通过socket.io 实时获取学生的弹幕信息，并且可以管理员发送单独的弹幕让老师看到。'},
+            {belong:'Better',title:'在线直播教育',text:'用React Native写的手机在线观看直播的APP，整个项目分为ios端和Android端，本人从事的是Android端开发，自行编写切换城市的组件和分类列表等功能，以及其他传统功能。'},
+            {belong:'MostAgile',title:'敏捷项目开发管理',text:'参与公司研发敏捷开发管理项目，为其加入三方图表组件Echarts，利用bootstrap编写一些model组件。适配页面组件大小及封装css样式。通过接口与后台进行数据交互。'},
+        ]
     }
 };

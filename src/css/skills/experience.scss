@@ -1,0 +1,79 @@
+.experience_bg {
+  width: 100vw;
+  height: 100vh;
+  background: #575757;
+
+
+  .ex_title {
+    position: absolute;
+    top:4vh;
+    left: 4vw;
+    font-size: 4em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 5px;
+  }
+  .en_div {
+    width: 90%;
+    height: 72vh;
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    column-count: 3;
+
+    .en_list {
+      width: 100%;
+      height: 72vh;
+      float: left;
+      position: relative;
+
+      .b_title_div {
+        width: 100%;
+        height: 5%;
+        text-align: center;
+        float: left;
+
+        .b_title {
+          font-size: 2em;
+          font-weight: lighter;
+          color: #ffffff;
+          letter-spacing: 2px;
+        }
+      }
+
+
+      .en_article_div {
+        width: 90%;
+        height: 63vh;
+        position: absolute;
+        top: 9vh;
+        left: 5%;
+        background: #333333;
+        text-indent: 2em;
+
+        .en_inform_txt {
+          line-height: 5vh;
+          font-weight: lighter;
+          font-size: 1.6em;
+          color: #ffffff;
+        }
+        .en_inform_txt_english {
+          line-height: 3.7vh;
+          font-weight: lighter;
+          font-size: 1.5em;
+          color: #ffffff;
+        }
+      }
+
+      .en_more {
+        position: absolute;
+        bottom: 3vh;
+        right: 6%;
+        cursor: pointer;
+        font-size: 1.5em;
+        font-weight: lighter;
+        color: #ffffff;
+      }
+    }
+  }
+}

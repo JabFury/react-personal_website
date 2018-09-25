@@ -31,6 +31,13 @@ module.exports = {
         rn:'Based on WebPack, I mainly developed the company\'s project android, and developed, packaged, and link tripartite plug-ins. Develop mobile live broadcast APP and video APP',
         reactTitle:'Based on WebPack, we can configure the React family bucket project from "0", use the React to develop the product backstage management system, and manage the company\'s minjie project management project. This website is also developed with the React',
         vue:'Based on WebPack, I am familiar with Vue. Js family bucket. I was mainly responsible for the official website of the product of the research and development project, the interface of mobile phone adaptation, and the WeChat sharing page of mobile phone'
+    },
+    experience : {
+        enData : [
+            {belong:'Better',title:'Background management system',text:'Starting from \'0\', a complete set of React family bucket is built, in which the Antd UI framework is configured and data is returned from the background through the interface called, using the encapsulated Fetch method. Its functions include administrator\'s login registration, user information, course information, and studio information, as well as modification of school and teacher\'s authentication status, etc. Meanwhile, it can check the live studio information through the live tweet address obtained, and make corresponding speech prohibition and forced closure according to whether it violates the rules. Get the students\' barrage information in real time through socket. IO, and the administrator can send a separate barrage for the teacher to see.'},
+            {belong:'Better',title:'Live online education',text:'The whole project is divided into ios APP and Android APP written by React Native. I am engaged in the development of Android APP, and I write the functions such as component and classification list of switching city by myself and other traditional functions.'},
+            {belong:'MostAgile',title:'Agile project development management',text:'Participated in the company\'s research and development of agile development management project, joined the tripartite chart component Echarts, and wrote some model components using bootstrap. Adapt page component sizes and encapsulate CSS styles. Data interaction through the interface with the background.'},
+        ]
     }
 
 };
