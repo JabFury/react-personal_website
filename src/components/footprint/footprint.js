@@ -232,7 +232,7 @@ class FootPrint extends Component {
                 />
                 {
                     deviceName==="mobile"?
-                        <label className='mobile_bottom_btn'>{isChinese === true ? '点击地图有惊喜哦':'click the map'}</label>
+                        <label className={['mobile_bottom_btn', isCurrentPage === true ? 'mobile_bottom_btn_active' : null].join(' ')}>{isChinese === true ? '点击地图有惊喜哦':'click the map'}</label>
                         : null
                 }
             </div>

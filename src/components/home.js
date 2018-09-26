@@ -244,7 +244,8 @@ class Home extends Component {
                             <div className="first_banner">
                                 <div className="swiper-wrapper">
                                     <div className="swiper-slide" style={{background: 'transparent'}}>
-                                        <Personal contentData={contentData.introduceData} deviceName={this.state.deviceName}/>
+                                        <Personal contentData={contentData.introduceData}
+                                                  deviceName={this.state.deviceName}/>
                                     </div>
                                     <div className="swiper-slide" style={{background: '#fff6e4'}}>
                                         <PhotoWall/>
@@ -261,10 +262,11 @@ class Home extends Component {
                         </div>
                         <div className="swiper-slide">
                             <FootPrint contentData={contentData.footPointData} currentNum={this.state.currentNum}
-                                       isChinese={this.state.isChinese}  deviceName={this.state.deviceName}/>
+                                       isChinese={this.state.isChinese} deviceName={this.state.deviceName}/>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333', opacity: '0.7'}}>
-                            <History contentData={contentData.history.pageData} currentNum={this.state.currentNum}/>
+                            <History contentData={contentData.history.pageData} currentNum={this.state.currentNum}
+                                     deviceName={this.state.deviceName}/>
                         </div>
                         <div className="swiper-slide">
                             <div className="third_banner">
@@ -304,13 +306,15 @@ class Home extends Component {
                             />
                         </div>
                     </div>
-                    <div className="next_btn">
-                        {
-                            (this.state.currentNum + 1) === this.state.wholePage ? null :
-                                <Icon type="arrow-down" theme="outlined"/>
-                        }
-                    </div>
-
+                    {
+                        deviceName === 'mobile' ? null :
+                            <div className="next_btn">
+                                {
+                                    (this.state.currentNum + 1) === this.state.wholePage ? null :
+                                        <Icon type="arrow-down" theme="outlined"/>
+                                }
+                            </div>
+                    }
                 </div>
             </div>
         )

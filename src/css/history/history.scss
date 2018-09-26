@@ -3,22 +3,24 @@
   height: 5px;
   background: #fbfbfb;
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
+
 .icon-svg {
   width: 25px;
-  height:25px;
+  height: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
+
 .foot {
   width: 5vh;
-  height:5vh;
+  height: 5vh;
   border-radius: 10vh;
   background: white;
   position: absolute;
@@ -29,33 +31,43 @@
   font-size: 25px;
   z-index: 1;
 }
+
 .foot_1 {
   left: 4.5%;
 }
+
 .foot_2 {
   left: 14%;
 }
+
 .foot_3 {
   left: 24%;
 }
+
 .foot_4 {
   left: 34%;
 }
+
 .foot_5 {
   left: 44%;
 }
+
 .foot_6 {
   left: 54%;
 }
+
 .foot_7 {
   left: 64%;
 }
+
 .foot_8 {
   left: 74%;
 }
+
 .foot_9 {
   left: 84%;
 }
+
 .foot_10 {
   left: 94%;
 }
@@ -65,20 +77,21 @@
   height: 0;
   background: white;
   position: absolute;
-  top:0;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   transition: all 2.5s ease-in-out;
 }
+
 .shu_dan {
   top: -10vh;
   height: 10vh;
 }
+
 .shu_shuang {
   top: 5vh;
   height: 10vh;
 }
-
 
 .inform_txt {
   width: 22vh;
@@ -87,37 +100,37 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color:transparent;
+  color: transparent;
   font-size: 15px;
   font-weight: lighter;
   word-wrap: break-word;
   transition: all 5s ease-in-out;
 }
+
 .txt_dan {
-  color:#ffffff;
-  top:-16vh;
+  color: #ffffff;
+  top: -16vh;
   //-webkit-top:-18vh;
 }
+
 .txt_shuang {
-  color:#ffffff;
-  top:15vh;
+  color: #ffffff;
+  top: 15vh;
 }
 
 .txt {
   width: 100%;
   height: 0;
   position: absolute;
-  top:0;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   float: left;
   text-align: center;
-
 }
 
-
 .year_txt {
-  color:transparent;
+  color: transparent;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -127,12 +140,157 @@
   font-family: Georgia;
   transition: all 5s ease-in-out;
 }
+
 .year_dan {
-  color:#ffffff;
+  color: #ffffff;
   top: 6vh; //height 5vh + 2vh
 }
+
 .year_shuang {
-  color:#ffffff;
+  color: #ffffff;
   top: -5vh;
 }
 
+//移动端
+.line_mobile {
+  width: 2px;
+  height: 100vh;
+  background: #fbfbfb;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.icon-svg_mobile {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.foot_mobile {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 10vh;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 4.5%;
+  transform: translateX(-50%);
+  transition: all 1.4s ease-in-out;
+  font-size: 25px;
+  z-index: 1;
+}
+
+.foot_1_mobile {
+  top: 4.5%;
+}
+
+.foot_2_mobile {
+  top: 14%;
+}
+
+.foot_3_mobile {
+  top: 24%;
+}
+
+.foot_4_mobile {
+  top: 34%;
+}
+
+.foot_5_mobile {
+  top: 44%;
+}
+
+.foot_6_mobile {
+  top: 54%;
+}
+
+.foot_7_mobile {
+  top: 64%;
+}
+
+.foot_8_mobile {
+  top: 74%;
+}
+
+.foot_9_mobile {
+  top: 84%;
+}
+
+.foot_10_mobile {
+  top: 94%;
+}
+
+.shu_mobile {
+  width: 0;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: all 2.5s ease-in-out;
+}
+
+.shu_dan_mobile {
+  left: -23vh;
+  width: 23vh;
+}
+
+.shu_shuang_mobile {
+  left: 5vh;
+  width: 23vh;
+}
+
+.inform_txt_mobile {
+  width: 18vh;
+  height: 10vh;
+  //background: aqua;
+  position: absolute;
+  top: 50%;
+  //transform: translateY(-50%);
+  color: transparent;
+  font-size: 13px;
+  font-weight: lighter;
+  word-wrap: break-word;
+  transition: all 5s ease-in-out;
+}
+
+.txt_dan_mobile {
+  color: #ffffff;
+  left: -24vh;
+  //-webkit-top:-18vh;
+}
+
+.txt_shuang_mobile {
+  color: #ffffff;
+  left: 11vh;
+}
+
+.year_txt_mobile {
+  color: transparent;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: Georgia;
+  transition: all 5s ease-in-out;
+}
+
+.year_dan_mobile {
+  color: #ffffff;
+  left: -15vh; //height 5vh + 2vh
+}
+
+.year_shuang_mobile {
+  color: #ffffff;
+  left: 19vh;
+}
