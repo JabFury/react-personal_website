@@ -30,7 +30,26 @@ class Home extends Component {
             wholePage: null,
             thirdIndex: 0,
             thirdWholePage: null,
-            isChinese: true
+            isChinese: true,
+            deviceName: null
+        }
+    }
+
+    componentWillMount() {
+        // if (UserDevise[0]){
+        //     this.setState({deviceName: UserDevise[0]})
+        // }
+        // else {
+        //     this.setState({deviceName: 'web'})
+        // }
+
+        if (/Android|webOS|iPhone|iPad|Windows Phone|iPod|BlackBerry|SymbianOS|Nokia|Mobile/i.test(navigator.userAgent)) {
+            this.setState({deviceName: 'mobile'})
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var UserDevise = sUserAgent.match(/android/i) || sUserAgent.match(/iPhone/i) || sUserAgent.match(/iPad/i);
+            // UserDevise 就是判断非pc设备的类型(android---iphone---iPad)
+        } else {
+            this.setState({deviceName: 'web'})
         }
     }
 
@@ -83,6 +102,8 @@ class Home extends Component {
 
         var mySwiper3 = new Swiper('.third_banner', {
             direction: 'horizontal',
+            width: window.innerWidth,
+            height: window.innerHeight,
             pagination: {
                 el: '.swiper-pagination',
             },
@@ -142,53 +163,60 @@ class Home extends Component {
 
     render() {
         let contentData = this.state.isChinese === true ? chinese_data : english_data;
+        let {deviceName} = this.state;
         return (
             <div>
-                <div className='whole' style={(this.state.isFullScreen===true&&this.state.isChinese===false)?{width:'115px'}:{width:'90px'}}>
+                <div className='whole'
+                     style={(this.state.isFullScreen === true && this.state.isChinese === false) ? {width: '115px'} : {width: '90px'}}>
                     {
-                        this.state.isFullScreen === false ?
-                            <div>
-                                <svg onClick={() => {
-                                    this.requestFullScreen()
-                                }} className="icon_fullScreen" aria-hidden="true">
-                                    <use xlinkHref='#icon-quanping'></use>
-                                </svg>
-                                <label
-                                    style={{cursor: 'pointer'}}
-                                >
-                                    {this.state.isChinese === true ? '全屏显示' : 'FullScreen'}
-                                </label>
-                            </div>
-                            :
-                            <div>
-                                <svg onClick={() => {
-                                    this.exitFullscreen()
-                                }} className="icon_fullScreen" aria-hidden="true">
-                                    <use xlinkHref='#icon-quitquanping'></use>
-                                </svg>
-                                <label
-                                    style={{cursor: 'pointer'}}
-                                >
-                                    {this.state.isChinese === true ? '退出全屏' : 'ExitFullScreen'}
-                                </label>
-                            </div>
+                        deviceName === 'mobile' ? null :
+                            this.state.isFullScreen === false ?
+                                <div>
+                                    <svg onClick={() => {
+                                        this.requestFullScreen()
+                                    }} className="icon_fullScreen" aria-hidden="true">
+                                        <use xlinkHref='#icon-quanping'></use>
+                                    </svg>
+                                    <label
+                                        style={{cursor: 'pointer'}}
+                                    >
+                                        {this.state.isChinese === true ? '全屏显示' : 'FullScreen'}
+                                    </label>
+                                </div>
+                                :
+                                <div>
+                                    <svg onClick={() => {
+                                        this.exitFullscreen()
+                                    }} className="icon_fullScreen" aria-hidden="true">
+                                        <use xlinkHref='#icon-quitquanping'></use>
+                                    </svg>
+                                    <label
+                                        style={{cursor: 'pointer'}}
+                                    >
+                                        {this.state.isChinese === true ? '退出全屏' : 'ExitFullScreen'}
+                                    </label>
+                                </div>
                     }
 
                 </div>
 
                 {
                     this.state.isChinese === false ?
-                        <div className='change_en' onClick={() => {
-                            this.setState({isChinese: true})
-                        }}>
+                        <div className='change_en'
+                             style={deviceName === 'mobile' ? {right: 0} : {right: '8.5%'}}
+                             onClick={() => {
+                                 this.setState({isChinese: true})
+                             }}>
                             <label style={{cursor: 'pointer'}}>
                                 切换成中文
                             </label>
                         </div>
                         :
-                        <div className='change_zh' onClick={() => {
-                            this.setState({isChinese: false})
-                        }}>
+                        <div className='change_zh'
+                             style={deviceName === 'mobile' ? {right: 0} : {right: '8.5%'}}
+                             onClick={() => {
+                                 this.setState({isChinese: false})
+                             }}>
                             <label style={{cursor: 'pointer'}}>
                                 View in English
                             </label>
@@ -216,7 +244,7 @@ class Home extends Component {
                             <div className="first_banner">
                                 <div className="swiper-wrapper">
                                     <div className="swiper-slide" style={{background: 'transparent'}}>
-                                        <Personal contentData={contentData.introduceData}/>
+                                        <Personal contentData={contentData.introduceData} deviceName={this.state.deviceName}/>
                                     </div>
                                     <div className="swiper-slide" style={{background: '#fff6e4'}}>
                                         <PhotoWall/>
@@ -233,7 +261,7 @@ class Home extends Component {
                         </div>
                         <div className="swiper-slide">
                             <FootPrint contentData={contentData.footPointData} currentNum={this.state.currentNum}
-                                       isChinese={this.state.isChinese}/>
+                                       isChinese={this.state.isChinese}  deviceName={this.state.deviceName}/>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333', opacity: '0.7'}}>
                             <History contentData={contentData.history.pageData} currentNum={this.state.currentNum}/>
@@ -265,13 +293,15 @@ class Home extends Component {
                                                 {this.state.isChinese == true ? '了解更多' : 'More'}
                                                 < Icon type="arrow-right" theme="outlined"/>
                                             </div>
-
                                     }
                                 </div>
                             </div>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333'}}>
-                            <Connect currentNum={this.state.currentNum} isChinese={this.state.isChinese}/>
+                            <Connect currentNum={this.state.currentNum}
+                                     isChinese={this.state.isChinese}
+                                     deviceName={this.state.deviceName}
+                            />
                         </div>
                     </div>
                     <div className="next_btn">

@@ -27,16 +27,15 @@
 
 
     .introduce {
-      width: 35vw;
+      width: 100vw;
       position: absolute;
       top:0;
       left: 50%;
       transform: translateX(-50%);
       text-align: center;
       color: #333333;
-
+      font-size: 23px;
       p {
-        font-size: 23px;
         font-style: normal;
         margin: 2vh 0;
         font-family: "Times New Roman", Times, serif;

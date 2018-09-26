@@ -9,19 +9,30 @@ class Personal extends Component {
 
     render() {
         let contentData = this.props.contentData;
+        let deviceName = this.props.deviceName;
         return (
             <div className='personal_bg'>
                 <div className='inform_div'>
 
-                    <div className='introduce'>
-                        <p style={{fontWeight:'lighter',marginBottom:'3vh',fontSize:'35px'}}>{contentData.title}</p>
+                    <div className='introduce' style={deviceName==='mobile'?{fontSize:'15px'}:{fontSize:'23px'}}>
+                        <p style={deviceName==='mobile' ? {fontSize: '20px'} : {
+                            fontWeight: 'lighter',
+                            marginBottom: '3vh',
+                            fontSize: '35px'
+                        }}>
+                            {contentData.title}
+                        </p>
                         <p>{contentData.intro_1}</p>
                         <p>{contentData.intro_2}</p>
                         <p>{contentData.intro_3}</p>
                     </div>
-                    <div className='header_img'>
+                    {
+                        deviceName==='mobile' ? null :
+                            <div className='header_img'>
 
-                    </div>
+                            </div>
+                    }
+
                 </div>
             </div>
         )

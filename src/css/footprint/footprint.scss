@@ -69,3 +69,16 @@
   opacity: 1;
   left: 48%
 }
+
+//手机端底部文字
+.mobile_bottom_btn {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20vh;
+  left: 0;
+  z-index: 10;
+  font-size: 16px;
+  font-weight: lighter;
+}
