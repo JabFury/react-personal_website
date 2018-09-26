@@ -9,6 +9,9 @@ export default class History extends Component {
         this.state = {}
     }
 
+    componentWillMount () {
+        console.log(/Safari/.test(navigator.userAgent)&& !/Chrome/.test(navigator.userAgent),'123412412');
+    }
     componentDidMount() {
 
     }

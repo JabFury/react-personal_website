@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="35418728-1387-4d8a-8817-04bc6bbd9df7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footprint/footprint.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footprint/footprint.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/history/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/history/history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/footprint/footprint.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/footprint/footprint.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/history/history.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/history/history.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -91,15 +88,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="43" />
-          <entry key="js" value="13786" />
-          <entry key="scss" value="7848" />
+          <entry key="js" value="13896" />
+          <entry key="scss" value="7857" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="43" />
-          <entry key="JavaScript" value="13786" />
-          <entry key="SCSS" value="7848" />
+          <entry key="JavaScript" value="13896" />
+          <entry key="SCSS" value="7857" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -136,20 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="316" column="21" selection-start-line="316" selection-start-column="21" selection-end-line="316" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/history/history.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="52" column="52" lean-forward="true" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+            <state relative-caret-position="300">
+              <caret line="47" column="12" lean-forward="true" selection-start-line="47" selection-start-column="12" selection-end-line="48" selection-end-column="118" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -158,10 +143,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/history/history.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/history/history.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="263" column="16" lean-forward="true" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="16" />
+            <state relative-caret-position="331">
+              <caret line="271" column="13" lean-forward="true" selection-start-line="271" selection-start-column="13" selection-end-line="271" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -284,8 +281,8 @@
         <option value="$PROJECT_DIR$/src/components/footprint/footprint.js" />
         <option value="$PROJECT_DIR$/src/components/home.js" />
         <option value="$PROJECT_DIR$/src/css/footprint/footprint.scss" />
-        <option value="$PROJECT_DIR$/src/components/history/history.js" />
         <option value="$PROJECT_DIR$/src/css/history/history.scss" />
+        <option value="$PROJECT_DIR$/src/components/history/history.js" />
       </list>
     </option>
   </component>
@@ -511,12 +508,12 @@
       <workItem from="1536044754146" duration="6872000" />
       <workItem from="1536216452396" duration="1177000" />
       <workItem from="1536635207133" duration="71525000" />
-      <workItem from="1537259158431" duration="57479000" />
+      <workItem from="1537259158431" duration="58863000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202098000" />
+    <option name="totallyTimeSpent" value="203482000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -531,7 +528,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.45698926" visible="true" weight="0.17553614" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.45698926" visible="true" weight="0.17553614" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5430108" side_tool="true" weight="0.24384432" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32962668" />
@@ -836,16 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="316" column="21" selection-start-line="316" selection-start-column="21" selection-end-line="316" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/footprint/footprint.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
@@ -863,20 +850,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/history/history.js">
+    <entry file="file://$PROJECT_DIR$/src/css/history/history.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="52" column="52" lean-forward="true" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+        <state relative-caret-position="331">
+          <caret line="271" column="13" lean-forward="true" selection-start-line="271" selection-start-column="13" selection-end-line="271" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="47" column="12" lean-forward="true" selection-start-line="47" selection-start-column="12" selection-end-line="48" selection-end-column="118" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/history/history.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/history/history.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="263" column="16" lean-forward="true" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="16" />
+        <state relative-caret-position="242">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
