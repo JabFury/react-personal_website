@@ -7,8 +7,8 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: #333333;
     opacity: 0.9;
+    background: #333333;
 
     .skills_title {
       width: 3vw;
@@ -268,7 +268,6 @@
     color: #ffffff;
   }
 
-
   //英语主题时响应式布局的文字
   .en_label {
     top: -15px;
@@ -295,6 +294,231 @@
     transition-delay: 7s;
   }
   .inform_txt_active {
+    color: #ffffff;
+  }
+}
+
+//移动端
+.skills_bg_mobile {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .bg_mobile {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: #333333;
+    opacity: 0.9;
+  }
+  .skills_title_mobile {
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    text-align: center;
+    color: transparent;
+    font-weight: lighter;
+    font-size: 2.7em;
+    line-height: 15vh;
+    letter-spacing: 5px;
+    transition: all 2s ease-in-out;
+  }
+  .skills_title_mobile_active {
+    color: #ffffff;
+  }
+  .skills_control_mobile {
+    width: 100vw;
+    height: 60vh;
+    position: absolute;
+    top: 20vh;
+    left: 0;
+  }
+  //竖线
+  .skills_line_mobile {
+    width: 2px;
+    height: 7vh;
+    background: #ffffff;
+    position: absolute;
+    //left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .line-1 {
+    height: 0;
+    transition: all 1s ease-out;
+    transition-delay: 2s;
+  }
+  .line-1_active {
+    height: 7vh;
+  }
+  .line-2 {
+    height: 0;
+    transition: all 1s ease-in;
+    transition-delay: 2.8s;
+  }
+  .line-2_active {
+    height: 7vh;
+  }
+  //横线
+  .skills_line_mobile_heng {
+    width: 37.3vw;
+    height: 2px;
+    position: absolute;
+    background: #ffffff;
+  }
+
+  .title_1_div_mobile {
+    width: 100px;
+    height: 5vh;
+    border: 1.5px solid transparent;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 5vh;
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: transparent;
+    transition: all 2s ease-in-out;
+  }
+  .title_1_mobile {
+    font-size: 1.6em;
+    font-weight: lighter;
+  }
+  .title_1_div_mobile_active {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  .skills_line_div_mobile {
+    height: 7vh;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .kuang-1 {
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transition: all 1s ease-in-out;
+    transition-delay: 3s;
+  }
+  .kuang-1_active {
+    border-color: #ffffff;
+  }
+
+  //2级标题
+  .title_2_div_mobile {
+    width: 20vw;
+    height: 4vh;
+    border: 1.5px solid #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 4vh;
+    position: absolute;
+    transform: translateX(-50%);
+    color: #ffffff;
+  }
+  .title_2_mobile {
+    font-size: 1.3em;
+    font-weight: lighter;
+  }
+
+  .js_mobile {
+    top: 24vh;
+    left: 50%;
+    transition: all 1s ease-in-out;
+    transition-delay: 4s;
+    border-color: transparent;
+    color: transparent;
+  }
+  .other_mobile {
+    top: 24vh;
+    left: 13%;
+    transition: all 1s ease-in-out;
+    transition-delay: 4s;
+    border-color: transparent;
+    color: transparent;
+  }
+  .css_mobile {
+    top: 24vh;
+    left: 87%;
+    transition: all 1s ease-in-out;
+    transition-delay: 4s;
+    border-color: transparent;
+    color: transparent;
+  }
+  .react_mobile {
+    top: 42vh;
+    left: 50%;
+  }
+  .vue_mobile {
+    top: 42vh;
+    left: 28%;
+  }
+  .rn_mobile {
+    top: 42vh;
+    left: 72%;
+  }
+  .xiang_mobile {
+    top: 49vh;
+    left: 17%;
+  }
+  .sass_mobile {
+    top: 49vh;
+    left: 50%;
+  }
+  .antd_mobile {
+    width: 30vw;
+    height: 8vh;
+    top: 49vh;
+    left: 83%;
+    word-wrap: break-word;
+  }
+  .git_mobile {
+    top: 49vh;
+    left: 17%;
+  }
+  .linux_mobile {
+    top: 49vh;
+    left: 50%;
+  }
+  .axure_mobile {
+    width: 30vw;
+    height: 4vh;
+    top: 49vh;
+    left: 83%;
+    word-wrap: break-word;
+  }
+
+  .other_mobile_active {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
+
+  //底部标题
+  .click_item_div {
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    bottom: 13vh;
+    left: 0;
+    text-align: center;
+    line-height: 5vh;
+    color: transparent;
+    font-weight: lighter;
+    font-size: 1.6em;
+    transition: 1.5s;
+    transition-delay: 5s;
+  }
+  .click_item_div_active {
     color: #ffffff;
   }
 }

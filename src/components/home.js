@@ -51,6 +51,11 @@ class Home extends Component {
         } else {
             this.setState({deviceName: 'web'})
         }
+
+        // if (/Safari/.test(navigator.userAgent)&& !/Chrome/.test(navigator.userAgent)){
+        //     console.log(/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent));
+        //     this.setState({isSafari: true});
+        // }
     }
 
     componentDidMount() {
@@ -273,23 +278,33 @@ class Home extends Component {
                                 <div className="swiper-wrapper">
                                     <div className="swiper-slide" style={{background: 'transparent'}}>
                                         <Skills contentData={contentData.skills} isChinese={this.state.isChinese}
-                                                currentNum={this.state.currentNum} thirdIndex={this.state.thirdIndex}/>
+                                                currentNum={this.state.currentNum} thirdIndex={this.state.thirdIndex}
+                                                deviceName={this.state.deviceName}
+                                        />
                                     </div>
                                     <div className="swiper-slide" style={{background: 'transparent'}}>
                                         <Experience contentData={contentData.experience.enData}
                                                     thirdIndex={this.state.thirdIndex}
-                                                    isChinese={this.state.isChinese}/>
+                                                    isChinese={this.state.isChinese}
+                                                    deviceName={this.state.deviceName}
+                                        />
                                     </div>
                                     {/*<div className="swiper-slide" style={{background: '#69c2ff'}}>child 3</div>*/}
                                 </div>
-                                <div className='first_prev third_prev'>
-                                    <Icon type="left" theme="outlined"/>
-                                </div>
-                                <div className='first_next third_next'>
-                                    <Icon type="right" theme="outlined"/>
-                                </div>
+                                {
+                                    deviceName === 'mobile' ? null :
+                                        <div>
+                                            <div className='first_prev third_prev'>
+                                                <Icon type="left" theme="outlined"/>
+                                            </div>
+                                            <div className='first_next third_next'>
+                                                <Icon type="right" theme="outlined"/>
+                                            </div>
+                                        </div>
+                                }
                                 <div className='third_next more_btn'>
                                     {
+                                        this.state.deviceName==='mobile'? null :
                                         (this.state.thirdIndex + 1) === this.state.thirdWholePage ? null :
                                             <div>
                                                 {this.state.isChinese == true ? '了解更多' : 'More'}

@@ -10,6 +10,7 @@ class Experience extends Component {
     render() {
         let isChinese = this.props.isChinese;
         let contentData = this.props.contentData;
+        let deviceName = this.props.deviceName;
         return (
             <div className='experience_bg'>
                 <div className='ex_title'><label>{isChinese===true?'我写过什么':'What have I written'}</label></div>

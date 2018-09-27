@@ -10,7 +10,7 @@ export default class History extends Component {
     }
 
     componentWillMount () {
-        console.log(/Safari/.test(navigator.userAgent)&& !/Chrome/.test(navigator.userAgent),'123412412');
+        // console.log(/Safari/.test(navigator.userAgent)&& !/Chrome/.test(navigator.userAgent),'123412412');
     }
     componentDidMount() {
 
