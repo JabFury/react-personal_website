@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="35418728-1387-4d8a-8817-04bc6bbd9df7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/history/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/history/history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/skills/experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skills/experience.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/chinese_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/chinese_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/english_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/english_data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/skills/skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skills/skills.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/skills/skills.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/skills/skills.scss" afterDir="false" />
     </list>
@@ -82,25 +80,26 @@
     <session id="2012655956">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.62" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="43" />
-          <entry key="js" value="15279" />
-          <entry key="scss" value="9080" />
+          <entry key="js" value="16868" />
+          <entry key="scss" value="9290" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="43" />
-          <entry key="JavaScript" value="15279" />
-          <entry key="SCSS" value="9080" />
+          <entry key="JavaScript" value="16868" />
+          <entry key="SCSS" value="9290" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -109,10 +108,10 @@
           <entry key="html" value="8" />
           <entry key="ico" value="2" />
           <entry key="jpg" value="3" />
-          <entry key="js" value="84" />
-          <entry key="json" value="2" />
+          <entry key="js" value="87" />
+          <entry key="json" value="3" />
           <entry key="png" value="1" />
-          <entry key="scss" value="39" />
+          <entry key="scss" value="40" />
           <entry key="ts" value="2" />
         </counts>
       </usages-collector>
@@ -121,9 +120,9 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="8" />
           <entry key="Image" value="6" />
-          <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="84" />
-          <entry key="SCSS" value="39" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="87" />
+          <entry key="SCSS" value="40" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
@@ -137,31 +136,68 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/skills/skills.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="515" column="25" lean-forward="true" selection-start-line="515" selection-start-column="25" selection-end-line="515" selection-end-column="25" />
+            <state relative-caret-position="421">
+              <caret line="558" column="14" lean-forward="true" selection-start-line="558" selection-start-column="14" selection-end-line="558" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/skills/skills.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
+            <state relative-caret-position="-1793">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-                <element signature="e#955#7693#0" />
-                <element signature="e#6922#12447#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/chinese_data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="703">
+              <caret line="32" column="68" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/english_data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="36" column="100" selection-start-line="36" selection-start-column="100" selection-end-line="36" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/connect/connect.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="119" selection-start-line="119" selection-end-line="135" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/connect/connect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2838">
+              <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="144" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="689">
-              <caret line="313" column="38" lean-forward="true" selection-start-line="313" selection-start-column="38" selection-end-line="313" selection-end-column="38" />
+            <state relative-caret-position="5434">
+              <caret line="300" column="34" selection-start-line="300" selection-start-column="34" selection-end-line="300" selection-end-column="34" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -183,15 +219,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>80</find>
-      <find>700</find>
-      <find>200</find>
-      <find>500</find>
-      <find>'</find>
-      <find>,</find>
-      <find>9vh</find>
-      <find>11vh</find>
-      <find>95vh</find>
       <find>css</find>
       <find>web_line_right_move</find>
       <find>border_div</find>
@@ -213,6 +240,15 @@
       <find>2.7</find>
       <find>js_</find>
       <find>2.9</find>
+      <find>brea</find>
+      <find>Reac</find>
+      <find>vue:{titie:'Vue',text:</find>
+      <find>titie</find>
+      <find>xiang</find>
+      <find>console.log</find>
+      <find>axure</find>
+      <find>You</find>
+      <find>you</find>
     </findStrings>
     <replaceStrings>
       <replace>class</replace>
@@ -231,6 +267,8 @@
       <replace>14vh</replace>
       <replace>97vh</replace>
       <replace>Safari</replace>
+      <replace>title</replace>
+      <replace>my</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -271,8 +309,6 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/common/homeData.js" />
         <option value="$PROJECT_DIR$/src/components/personal/photoWall.js" />
-        <option value="$PROJECT_DIR$/src/common/english_data.js" />
-        <option value="$PROJECT_DIR$/src/common/chinese_data.js" />
         <option value="$PROJECT_DIR$/src/css/skills/experience.scss" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/webpack.common.config.js" />
@@ -288,8 +324,10 @@
         <option value="$PROJECT_DIR$/src/components/history/history.js" />
         <option value="$PROJECT_DIR$/src/components/skills/experience.js" />
         <option value="$PROJECT_DIR$/src/components/home.js" />
-        <option value="$PROJECT_DIR$/src/css/skills/skills.scss" />
         <option value="$PROJECT_DIR$/src/components/skills/skills.js" />
+        <option value="$PROJECT_DIR$/src/common/english_data.js" />
+        <option value="$PROJECT_DIR$/src/css/skills/skills.scss" />
+        <option value="$PROJECT_DIR$/src/common/chinese_data.js" />
       </list>
     </option>
   </component>
@@ -320,10 +358,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="84" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
-    <option name="height" value="716" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -333,6 +370,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,7 +387,20 @@
               <item name="react-personal_website" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-personal_website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-personal_website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-personal_website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-personal_website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-personal_website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="connect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-personal_website" type="b2602c69:ProjectViewProjectNode" />
@@ -364,6 +415,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="history" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-personal_website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-personal_website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="skills" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-personal_website" type="b2602c69:ProjectViewProjectNode" />
@@ -409,7 +467,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -529,12 +586,13 @@
       <workItem from="1536044754146" duration="6872000" />
       <workItem from="1536216452396" duration="1177000" />
       <workItem from="1536635207133" duration="71525000" />
-      <workItem from="1537259158431" duration="72584000" />
+      <workItem from="1537259158431" duration="80499000" />
+      <workItem from="1538111443258" duration="4905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217203000" />
+    <option name="totallyTimeSpent" value="230023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -546,12 +604,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.45698926" weight="0.17553614" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4549763" visible="true" weight="0.17553614" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.5430108" side_tool="true" weight="0.24384432" />
+      <window_info id="npm" order="2" sideWeight="0.5450237" side_tool="true" weight="0.17553614" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32962668" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
@@ -646,13 +704,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/.4.1.0@echarts/map/json/province/sichuan.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/home/home_bg.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -673,34 +724,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/homeData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/homeData.js" />
     <entry file="file://$PROJECT_DIR$/src/components/personal/photoWall.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="112" selection-start-line="112" selection-end-line="112" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/english_data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/chinese_data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -708,9 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
           <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -776,9 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,23 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/connect/connect.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="91" column="21" lean-forward="true" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/connect/connect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,9 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,9 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3917">
           <caret line="234" column="61" selection-start-line="234" selection-start-column="44" selection-end-line="234" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -871,10 +870,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/home.js">
+    <entry file="file://$PROJECT_DIR$/src/components/connect/connect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="313" column="38" lean-forward="true" selection-start-line="313" selection-start-column="38" selection-end-line="313" selection-end-column="38" />
+        <state relative-caret-position="2838">
+          <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="144" selection-end-column="17" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -883,19 +882,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/skills/skills.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="515" column="25" lean-forward="true" selection-start-line="515" selection-start-column="25" selection-end-line="515" selection-end-column="25" />
+        <state relative-caret-position="421">
+          <caret line="558" column="14" lean-forward="true" selection-start-line="558" selection-start-column="14" selection-end-line="558" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/chinese_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="32" column="68" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/connect/connect.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="119" selection-start-line="119" selection-end-line="135" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/english_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="36" column="100" selection-start-line="36" selection-start-column="100" selection-end-line="36" selection-end-column="100" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/skills/skills.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
+        <state relative-caret-position="-1793">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#955#7693#0" />
-            <element signature="e#6922#12447#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5434">
+          <caret line="300" column="34" selection-start-line="300" selection-start-column="34" selection-end-line="300" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

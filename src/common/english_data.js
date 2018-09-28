@@ -28,9 +28,15 @@ module.exports = {
         ]
     },
     skills : {
-        rn:'Based on WebPack, I mainly developed the company\'s project android, and developed, packaged, and link tripartite plug-ins. Develop mobile live broadcast APP and video APP',
-        reactTitle:'Based on WebPack, we can configure the React family bucket project from "0", use the React to develop the product backstage management system, and manage the company\'s minjie project management project. This website is also developed with the React',
-        vue:'Based on WebPack, I am familiar with Vue. Js family bucket. I was mainly responsible for the official website of the product of the research and development project, the interface of mobile phone adaptation, and the WeChat sharing page of mobile phone'
+        git:{title:'git',text :'Can be used effectively for team development and project management'},
+        linux:{title:'linxu',text:'\'ll use some of the basics of Linux for my daily programming'},
+        xiang:{title:'Responsive layout',text:'I can write PC and mobile compatible styles. I can also change the style of the page by choosing different routes to enter depending on the device'},
+        sass:{title:'Sass',text:'Replacing Css with Sass will store styles as variables. I can also use WebPack for configuration into my project'},
+        antd:{title:'UI Frame',text:'React development was performed using the AntdUI framework, and ElementUI was developed for Vue. BootStrap was also used for development'},
+        axure:{title:'Adobe XD,Axure',text:'Make use of Adobe XD to interact with UI artists, and design the two apps at the same time'},
+        rn:{title:'React Native',text:'Based on WebPack, I mainly developed the company\'s project android, and developed, packaged, and link tripartite plug-ins. Develop mobile live broadcast APP and video APP'},
+        react:{title:'React',text:'Based on WebPack, we can configure the React family bucket project from "0", use the React to develop the product backstage management system, and manage the company\'s minjie project management project. This website is also developed with the React'},
+        vue:{title:'Vue',text:'Based on WebPack, I am familiar with Vue. Js family bucket. I was mainly responsible for the official website of the product of the research and development project, the interface of mobile phone adaptation, and the WeChat sharing page of mobile phone'}
     },
     experience : {
         enData : [

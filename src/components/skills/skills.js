@@ -8,6 +8,11 @@ export default class Skills extends Component {
             showJs: false,
             showCss: false,
             showOther: false,
+            showInform: false,
+            informVal: {
+                title: '',
+                text: ''
+            }
         }
     }
 
@@ -16,6 +21,7 @@ export default class Skills extends Component {
         let contentData = this.props.contentData;
         let isChinese = this.props.isChinese;
         let deviceName = this.props.deviceName;
+
         return (
             deviceName === 'mobile' ?
                 <div className='skills_bg_mobile'>
@@ -55,14 +61,44 @@ export default class Skills extends Component {
                                 <div>
                                     <span className='skills_line_mobile' style={{top: '28vh', left: '50%'}}/>
                                     <span className='skills_line_mobile' style={{top: '35vh', left: '50%'}}/>
-                                    <div className='title_2_div_mobile react_mobile'>
+                                    <div className='title_2_div_mobile react_mobile'
+                                         onClick={() => {
+                                             this.setState({
+                                                 showInform: true,
+                                                 informVal: {
+                                                     title: contentData.react.title,
+                                                     text: contentData.react.text
+                                                 }
+                                             });
+                                         }}
+                                    >
                                         <label className='title_2_mobile'>React</label>
                                     </div>
                                     <div className='skills_line_div_mobile' style={{width: '45vw', top: '35vh'}}></div>
-                                    <div className='title_2_div_mobile vue_mobile'>
+                                    <div className='title_2_div_mobile vue_mobile'
+                                         onClick={() => {
+                                             this.setState({
+                                                 showInform: true,
+                                                 informVal: {
+                                                     title: contentData.vue.title,
+                                                     text: contentData.vue.text
+                                                 }
+                                             });
+                                         }}
+                                    >
                                         <label className='title_2_mobile'>Vue</label>
                                     </div>
-                                    <div className='title_2_div_mobile rn_mobile'>
+                                    <div className='title_2_div_mobile rn_mobile'
+                                         onClick={() => {
+                                             this.setState({
+                                                 showInform: true,
+                                                 informVal: {
+                                                     title: contentData.rn.title,
+                                                     text: contentData.rn.text
+                                                 }
+                                             });
+                                         }}
+                                    >
                                         <label className='title_2_mobile'>RN</label>
                                     </div>
                                 </div> : null
@@ -87,14 +123,44 @@ export default class Skills extends Component {
                                     <span className='skills_line_mobile_heng' style={{top: '35vh', left: '12.7%'}}/>
                                     <span className='skills_line_mobile' style={{top: '35vh', left: '50%'}}/>
                                     <span className='skills_line_mobile' style={{top: '42vh', left: '50%'}}/>
-                                    <div className='title_2_div_mobile axure_mobile'>
+                                    <div className='title_2_div_mobile axure_mobile'
+                                         onClick={() => {
+                                             this.setState({
+                                                 showInform: true,
+                                                 informVal: {
+                                                     title: contentData.axure.title,
+                                                     text: contentData.axure.text
+                                                 }
+                                             });
+                                         }}
+                                    >
                                         <label className='title_2_mobile'>Adobe XD,Axure</label>
                                     </div>
                                     <div className='skills_line_div_mobile' style={{width: '65vw', top: '42vh'}}></div>
-                                    <div className='title_2_div_mobile linux_mobile'>
+                                    <div className='title_2_div_mobile linux_mobile'
+                                         onClick={() => {
+                                             this.setState({
+                                                 showInform: true,
+                                                 informVal: {
+                                                     title: contentData.linux.title,
+                                                     text: contentData.linux.text
+                                                 }
+                                             });
+                                         }}
+                                    >
                                         <label className='title_2_mobile'>Linux</label>
                                     </div>
-                                    <div className='title_2_div_mobile git_mobile'>
+                                    <div className='title_2_div_mobile git_mobile'
+                                         onClick={() => {
+                                             this.setState({
+                                                 showInform: true,
+                                                 informVal: {
+                                                     title: contentData.git.title,
+                                                     text: contentData.git.text
+                                                 }
+                                             });
+                                         }}
+                                    >
                                         <label className='title_2_mobile'>git</label>
                                     </div>
                                 </div> : null
@@ -117,24 +183,82 @@ export default class Skills extends Component {
                                     <span className='skills_line_mobile' style={{top: '35vh', left: '50%'}}/>
                                     <span className='skills_line_mobile' style={{top: '42vh', left: '50%'}}/>
                                     <div className='title_2_div_mobile xiang_mobile'
-                                         style={isChinese === true ? {height: '4vh'} : {height: '8vh'}}>
+                                         style={isChinese === true ? {height: '4vh'} : {height: '8vh'}}
+                                         onClick={() => {
+                                             this.setState({
+                                                 showInform: true,
+                                                 informVal: {
+                                                     title: contentData.xiang.title,
+                                                     text: contentData.xiang.text
+                                                 }
+                                             });
+                                         }}
+                                    >
                                         <label
                                             className='title_2_mobile'>{isChinese === true ? '响应式布局' : 'Responsive layout'}</label>
                                     </div>
                                     <div className='skills_line_div_mobile' style={{width: '65vw', top: '42vh'}}></div>
-                                    <div className='title_2_div_mobile sass_mobile'>
+                                    <div className='title_2_div_mobile sass_mobile'
+                                         onClick={() => {
+                                             this.setState({
+                                                 showInform: true,
+                                                 informVal: {
+                                                     title: contentData.sass.title,
+                                                     text: contentData.sass.text
+                                                 }
+                                             });
+                                         }}
+                                    >
                                         <label className='title_2_mobile'>Sass</label>
                                     </div>
-                                    <div className='title_2_div_mobile antd_mobile'>
+                                    <div className='title_2_div_mobile antd_mobile'
+                                         onClick={() => {
+                                             this.setState({
+                                                 showInform: true,
+                                                 informVal: {
+                                                     title: contentData.antd.title,
+                                                     text: contentData.antd.text
+                                                 }
+                                             });
+                                         }}
+                                    >
                                         <label className='title_2_mobile'>Antd,ElementUI,Bootstrap</label>
                                     </div>
                                 </div> : null
                         }
                     </div>
 
-                    <div className={['click_item_div', isCurrentPage === true ? 'click_item_div_active' : null].join(' ')}>
-                        <label>{isChinese===true?'请点击每项':'Please Click Items'}</label>
+                    <div
+                        className={['click_item_div', isCurrentPage === true ? 'click_item_div_active' : null].join(' ')}>
+                        <label>{isChinese === true ? '请点击每项' : 'Please Click Items'}</label>
                     </div>
+
+                    {
+                        this.state.showInform === true ?
+                            <div
+                                onClick={() => {
+                                    this.setState({
+                                        showInform: false,
+                                        informVal: {
+                                            title: '',
+                                            text: ''
+                                        }
+                                    })
+                                }}
+                            >
+                                <div
+                                    className={['inform_model', this.state.showInform === true ? 'show_inform_model' : null].join(' ')}
+                                >
+                                    <div className='i_model_title'>
+                                        <label>{this.state.informVal.title}</label>
+                                    </div>
+                                    <div className='i_model_article'>
+                                        <label>{this.state.informVal.text}</label>
+                                    </div>
+                                </div>
+                            </div>
+                            : null
+                    }
                 </div>
                 :
                 <div className='skills_bg'>
@@ -208,19 +332,19 @@ export default class Skills extends Component {
                         <div className='rn_inform_div'>
                             <label
                                 className={[isChinese === true ? 'skills_inform_txt' : 'en_inform_txt', isCurrentPage === true ? 'inform_txt_active' : null].join(' ')}>
-                                {contentData.rn}
+                                {contentData.rn.text}
                             </label>
                         </div>
                         <div className='react_inform_div'>
                             <label
                                 className={[isChinese === true ? 'skills_inform_txt' : 'en_inform_txt', isCurrentPage === true ? 'inform_txt_active' : null].join(' ')}>
-                                {contentData.reactTitle}
+                                {contentData.react.text}
                             </label>
                         </div>
                         <div className='vue_inform_div'>
                             <label
                                 className={[isChinese === true ? 'skills_inform_txt' : 'en_inform_txt', isCurrentPage === true ? 'inform_txt_active' : null].join(' ')}>
-                                {contentData.vue}
+                                {contentData.vue.text}
                             </label>
                         </div>
                     </div>

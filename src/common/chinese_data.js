@@ -25,9 +25,15 @@ module.exports = {
         ]
     },
     skills : {
-        rn:'基于WebPack，主要开发公司项目安卓端项目， 研发、打包、link三方插件。研发手机直播APP， 视频APP',
-        reactTitle:'基于WebPack，能够从\'0\'配置React全家桶项目， 工作期间使用React研发产品后台管理系统，公司敏 捷项目管 理项目，本官网也是用React开发的',
-        vue:'基于WebPack，熟悉使用Vue.js全家桶，工作期间 主要负责研发项目产品官网及手机适配界面， 手机 微信分享页面\n'
+        git:{title:'git',text :'能够有效的用于团队开发，项目管理。'},
+        linux:{title:'linxu',text:'会使用一些linux系统的基础功能，用于日常编程'},
+        xiang:{title:'响应式布局',text:'可以写出pc端和手机端兼容的样式。也可以根据不同设备选择进入的不同路由从而改变页面样式'},
+        sass:{title:'Sass',text:'用Sass替代Css，会以变量形式储存样式。也可以利用WebPack进行配置到项目中'},
+        antd:{title:'UI框架',text:'使用AntdUI框架进行React开发，ElementUI进行Vue开发，同样均可使用BootStrap进行开发'},
+        axure:{title:'Adobe XD,Axure',text:'利用Adobe XD与UI美工进行产品交互，同时使用此两款app设计界面'},
+        rn:{title:'React Native',text:'基于WebPack，主要开发公司项目安卓端项目， 研发、打包、link三方插件。研发手机直播APP， 视频APP'},
+        react:{title:'React',text:'基于WebPack，能够从\'0\'配置React全家桶项目， 工作期间使用React研发产品后台管理系统，公司敏 捷项目管 理项目，本官网也是用React开发的'},
+        vue:{title:'Vue',text:'基于WebPack，熟悉使用Vue.js全家桶，工作期间 主要负责研发项目产品官网及手机适配界面， 手机 微信分享页面\n'}
     },
     experience : {
         enData : [
