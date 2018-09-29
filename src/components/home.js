@@ -4,13 +4,14 @@ import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.css'
 import {Icon, Button} from 'antd'
 import Personal from './personal/personal'
-import PhotoWall from './personal/photoWall'
+import Money from './personal/money'
 import History from './history/history'
 import FootPrint from './footprint/footprint'
 import Skills from './skills/skills'
 import Experience from './skills/experience'
 
 import Connect from './connect/connect'
+import Final from './finally/final'
 
 import welcome_top from '../images/welcome/welcome_top.jpg'
 import welcome_bottom from '../images/welcome/welcome_bottom.jpg'
@@ -262,9 +263,8 @@ class Home extends Component {
                                                   deviceName={this.state.deviceName}/>
                                     </div>
                                     <div className="swiper-slide" style={{background: '#fff6e4'}}>
-                                        <PhotoWall/>
+                                        <Money deviceName={this.state.deviceName}/>
                                     </div>
-                                    <div className="swiper-slide" style={{background: '#ba93ce'}}>child 3</div>
                                 </div>
                                 <div className='first_prev'>
                                     <Icon type="left" theme="outlined"/>
@@ -316,9 +316,9 @@ class Home extends Component {
                                     {
                                         this.state.deviceName === 'mobile' ?
                                             (this.state.thirdIndex + 1) === this.state.thirdWholePage ? null :
-                                            <div className='i_arr_right'>
-                                                <Icon type="arrow-right" theme="outlined"/>
-                                            </div>
+                                                <div className='i_arr_right'>
+                                                    <Icon type="arrow-right" theme="outlined"/>
+                                                </div>
                                             :
                                             (this.state.thirdIndex + 1) === this.state.thirdWholePage ? null :
                                                 <div style={{position: 'absolute', top: '10%', left: '10%'}}>
@@ -337,11 +337,19 @@ class Home extends Component {
                         </div>
                     </div>
                     {
-                        deviceName === 'mobile' ? null :
+                        deviceName === 'mobile' ?
+                            <div className='bottom_jiantou'>
+                                <span className='i_1'>></span>
+                                <span className='i_2'>></span>
+                                <span className='i_3'>></span>
+                                <span className='i_4'>></span>
+                                <span className='i_5'>></span>
+                            </div>
+                            :
                             <div className="next_btn">
                                 {
                                     (this.state.currentNum + 1) === this.state.wholePage ? null :
-                                        <Icon type="arrow-down" theme="outlined"/>
+                                        <div className="arrow"></div>
                                 }
                             </div>
                     }

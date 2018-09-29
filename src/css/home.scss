@@ -293,11 +293,94 @@ img {
   left: 5%;
 }
 
+//底部箭头
+.arrow {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -11px;
+  border: 4px solid transparent;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  z-index: 99;
+  opacity: .8;
+  -webkit-transform: rotate(-135deg);
+  -webkit-animation: arrow 1.5s infinite ease-in-out;
+}
 
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -10px) rotate(-135deg)
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -5px) rotate(-135deg)
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotate(-135deg)
+  }
+}
 
+// home 底部箭头
+.bottom_jiantou {
+  width: 40%;
+  height: 5vh;
+  line-height: 5vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 2em;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
 
+.i_1 {
+  animation: light_jiantou 2s infinite linear;
+  animation-delay: 0.1s;
+  color: #ffffff;
+}
 
+.i_2 {
+  animation: light_jiantou 2s infinite linear;
+  animation-delay: 0.2s;
+  color: #ffffff;
+}
 
+.i_3 {
+  animation: light_jiantou 2s infinite linear;
+  animation-delay: 0.3s;
+  color: #ffffff;
+}
 
+.i_4 {
+  animation: light_jiantou 2s infinite linear;
+  animation-delay: 0.4s;
+  color: #ffffff;
+}
+
+.i_5 {
+  animation: light_jiantou 2s infinite linear;
+  animation-delay: 0.5s;
+  color: #ffffff;
+}
+
+@keyframes light_jiantou {
+  0% {
+    color: #ffffff;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
 
 

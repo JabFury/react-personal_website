@@ -26,12 +26,12 @@ class Personal extends Component {
                         <p>{contentData.intro_2}</p>
                         <p>{contentData.intro_3}</p>
                     </div>
-                    {
-                        deviceName==='mobile' ? null :
-                            <div className='header_img'>
+                    {/*{*/}
+                        {/*deviceName==='mobile' ? null :*/}
+                            {/*<div className='header_img'>*/}
 
-                            </div>
-                    }
+                            {/*</div>*/}
+                    {/*}*/}
 
                 </div>
             </div>
