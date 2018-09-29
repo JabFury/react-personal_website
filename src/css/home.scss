@@ -294,7 +294,7 @@ img {
 }
 
 //底部箭头
-.arrow {
+.arrow_btn {
   display: block;
   width: 30px;
   height: 30px;
@@ -336,9 +336,9 @@ img {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-size: 2em;
-  font-weight: lighter;
-  letter-spacing: 2px;
+  font-size: 2.5em;
+  //font-weight: lighter;
+  letter-spacing: 4px;
 }
 
 .i_1 {
@@ -349,25 +349,25 @@ img {
 
 .i_2 {
   animation: light_jiantou 2s infinite linear;
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
   color: #ffffff;
 }
 
 .i_3 {
   animation: light_jiantou 2s infinite linear;
-  animation-delay: 0.3s;
+  animation-delay: 0.7s;
   color: #ffffff;
 }
 
 .i_4 {
   animation: light_jiantou 2s infinite linear;
-  animation-delay: 0.4s;
+  animation-delay: 1s;
   color: #ffffff;
 }
 
 .i_5 {
   animation: light_jiantou 2s infinite linear;
-  animation-delay: 0.5s;
+  animation-delay: 1.3s;
   color: #ffffff;
 }
 

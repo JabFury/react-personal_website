@@ -337,21 +337,23 @@ class Home extends Component {
                         </div>
                     </div>
                     {
-                        deviceName === 'mobile' ?
+                        deviceName === 'mobile' ? null :
+                            <div className="next_btn">
+                                {
+                                    (this.state.currentNum + 1) === this.state.wholePage ? null :
+                                        <div className="arrow_btn"></div>
+                                }
+                            </div>
+                    }
+                    {
+                        deviceName === 'mobile' && this.state.currentNum === 0 ?
                             <div className='bottom_jiantou'>
                                 <span className='i_1'>></span>
                                 <span className='i_2'>></span>
                                 <span className='i_3'>></span>
                                 <span className='i_4'>></span>
                                 <span className='i_5'>></span>
-                            </div>
-                            :
-                            <div className="next_btn">
-                                {
-                                    (this.state.currentNum + 1) === this.state.wholePage ? null :
-                                        <div className="arrow"></div>
-                                }
-                            </div>
+                            </div> : null
                     }
                 </div>
             </div>
