@@ -6,12 +6,15 @@ export default class Connect extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isShowWeChat: false
+            isShowWeChat: false,
+            isQQ: false
         }
     }
+
     componentDidMount() {
 
     }
+
     render() {
         let isCurrentPage = (this.props.currentNum === 4);
         let isChinese = this.props.isChinese;
@@ -74,8 +77,18 @@ export default class Connect extends Component {
                                 className='connect_title'>{isChinese === true ? '你可以通过以下方式找到我' : 'Contect Me With'}
                             </label>
                     }
-                            <div className={deviceName === "mobile" ? 'icon_div_mobile' : 'icon_div'}>
-                                <div className='icon-div'>
+                    <div className={deviceName === "mobile" ? 'icon_div_mobile' : 'icon_div'}>
+                        <div className='icon-div'>
+                            {
+                                deviceName === "mobile" ?
+                                    <a onClick={() => {this.setState({isShowWeChat: true,isQQ: true})}}>
+                                        <svg
+                                            className={deviceName === "mobile" ? "connect_icon_svg_mobile" : "connect_icon_svg"}
+                                            aria-hidden="true">
+                                            <use xlinkHref="#icon-qq"></use>
+                                        </svg>
+                                    </a>
+                                    :
                                     <a target="_blank" href='http://wpa.qq.com/msgrd?v=3&uin=47890165&menu=yes'>
                                         <svg
                                             className={deviceName === "mobile" ? "connect_icon_svg_mobile" : "connect_icon_svg"}
@@ -83,50 +96,52 @@ export default class Connect extends Component {
                                             <use xlinkHref="#icon-qq"></use>
                                         </svg>
                                     </a>
-                                </div>
-                                <div className='icon-div'>
-                                    <a target="_blank" href='https://github.com/JabFury'>
-                                        <svg
-                                            className={deviceName === "mobile" ? "connect_icon_svg_mobile" : "connect_icon_svg"}
-                                            aria-hidden="true">
-                                            <use xlinkHref="#icon-github000"></use>
-                                        </svg>
-                                    </a>
-                                </div>
+                            }
 
-                                <div className='icon-div'>
-                                    <a target="_blank"
-                                       href='https://weibo.com/5433476675/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1'>
-                                        <svg
-                                            className={deviceName === "mobile" ? "connect_icon_svg_mobile" : "connect_icon_svg"}
-                                            aria-hidden="true">
-                                            <use xlinkHref="#icon-weibo"></use>
-                                        </svg>
-                                    </a>
-                                </div>
+                        </div>
+                        <div className='icon-div'>
+                            <a target="_blank" href='https://github.com/JabFury'>
+                                <svg
+                                    className={deviceName === "mobile" ? "connect_icon_svg_mobile" : "connect_icon_svg"}
+                                    aria-hidden="true">
+                                    <use xlinkHref="#icon-github000"></use>
+                                </svg>
+                            </a>
+                        </div>
 
-                                <div className='icon-div'>
-                                    <a target="_blank" href='https://twitter.com/FuryJab'>
-                                        <svg
-                                            className={deviceName === "mobile" ? "connect_icon_svg_mobile" : "connect_icon_svg"}
-                                            aria-hidden="true">
-                                            <use xlinkHref="#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </div>
+                        <div className='icon-div'>
+                            <a target="_blank"
+                               href='https://weibo.com/5433476675/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1'>
+                                <svg
+                                    className={deviceName === "mobile" ? "connect_icon_svg_mobile" : "connect_icon_svg"}
+                                    aria-hidden="true">
+                                    <use xlinkHref="#icon-weibo"></use>
+                                </svg>
+                            </a>
+                        </div>
 
-                                <div className='icon-div'>
-                                    <a style={{cursor: 'pointer'}} onClick={() => {
-                                        this.setState({isShowWeChat: true})
-                                    }}>
-                                        <svg
-                                            className={deviceName === "mobile" ? "connect_icon_svg_mobile" : "connect_icon_svg wechat"}
-                                            aria-hidden="true">
-                                            <use xlinkHref="#icon-weixin"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                        <div className='icon-div'>
+                            <a target="_blank" href='https://twitter.com/FuryJab'>
+                                <svg
+                                    className={deviceName === "mobile" ? "connect_icon_svg_mobile" : "connect_icon_svg"}
+                                    aria-hidden="true">
+                                    <use xlinkHref="#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div className='icon-div'>
+                            <a style={{cursor: 'pointer'}} onClick={() => {
+                                this.setState({isShowWeChat: true, isQQ: false})
+                            }}>
+                                <svg
+                                    className={deviceName === "mobile" ? "connect_icon_svg_mobile" : "connect_icon_svg wechat"}
+                                    aria-hidden="true">
+                                    <use xlinkHref="#icon-weixin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 {
@@ -137,8 +152,13 @@ export default class Connect extends Component {
                             <div
                                 className={['wechat_model', this.state.isShowWeChat === true ? 'show_wechat_model' : null].join(' ')}></div>
                             <div
-                                className={['we-chat', this.state.isShowWeChat === true ? deviceName==="mobile"?'show_wechat_mobile':'show_wechat' : null].join(' ')}>
-                                <img src={require('../../images/wechat_code.png')}/>
+                                className={['we-chat', this.state.isShowWeChat === true ? deviceName === "mobile" ? 'show_wechat_mobile' : 'show_wechat' : null].join(' ')}>
+                                {
+                                    this.state.isQQ===true ?
+                                        <img src={require('../../images/qq_code.png')}/>
+                                        :
+                                        <img src={require('../../images/wechat_code.png')}/>
+                                }
                             </div>
                         </div>
                         : null

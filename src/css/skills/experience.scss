@@ -3,10 +3,9 @@
   height: 100vh;
   background: #575757;
 
-
   .ex_title {
     position: absolute;
-    top:4vh;
+    top: 4vh;
     left: 4vw;
     font-size: 4em;
     font-weight: lighter;
@@ -15,15 +14,15 @@
   }
   .en_div {
     width: 90%;
-    height: 72vh;
+    height: 75vh;
     position: absolute;
-    top: 17%;
+    top: 14%;
     left: 5%;
     column-count: 3;
 
     .en_list {
       width: 100%;
-      height: 72vh;
+      height: 75vh;
       float: left;
       position: relative;
 
@@ -41,10 +40,9 @@
         }
       }
 
-
       .en_article_div {
         width: 90%;
-        height: 63vh;
+        height: 65vh;
         position: absolute;
         top: 9vh;
         left: 5%;
@@ -64,16 +62,36 @@
           color: #ffffff;
         }
       }
-
-      .en_more {
-        position: absolute;
-        bottom: 3vh;
-        right: 6%;
-        cursor: pointer;
-        font-size: 1.5em;
-        font-weight: lighter;
-        color: #ffffff;
-      }
     }
   }
+
+  //手机端
+  .ex_title_mobile {
+    position: absolute;
+    top: 7vh;
+    left: 6vw;
+    font-size: 2em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 5px;
+  }
+  .collapse_mobile {
+    width: 100%;
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    background: #777777;
+    color: #ffffff;
+    text-indent: 2em;
+  }
+}
+
+//列表标题的颜色
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  color: #ffffff;
+}
+
+//内容区域背景颜色
+.ant-collapse-content > .ant-collapse-content-box {
+  background: #fff9f0;
 }

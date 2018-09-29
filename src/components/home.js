@@ -315,6 +315,7 @@ class Home extends Component {
                                 <div className='third_next more_btn'>
                                     {
                                         this.state.deviceName === 'mobile' ?
+                                            (this.state.thirdIndex + 1) === this.state.thirdWholePage ? null :
                                             <div className='i_arr_right'>
                                                 <Icon type="arrow-right" theme="outlined"/>
                                             </div>
