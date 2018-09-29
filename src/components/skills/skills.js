@@ -5,9 +5,6 @@ export default class Skills extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showJs: false,
-            showCss: false,
-            showOther: false,
             showInform: false,
             informVal: {
                 title: '',
@@ -21,6 +18,7 @@ export default class Skills extends Component {
         let contentData = this.props.contentData;
         let isChinese = this.props.isChinese;
         let deviceName = this.props.deviceName;
+        let {skillsIndex} = this.props;
 
         return (
             deviceName === 'mobile' ?
@@ -35,7 +33,7 @@ export default class Skills extends Component {
                         <div
                             className={['title_1_div_mobile', isCurrentPage === true ? 'title_1_div_mobile_active' : null].join(' ')}
                             onClick={() => {
-                                this.setState({showJs: false, showCss: false, showOther: false})
+                                this.props.setSkillsIndex(0)
                             }}
                         >
                             <label className='title_1_mobile'>
@@ -51,13 +49,13 @@ export default class Skills extends Component {
                         <div
                             className={['title_2_div_mobile js_mobile', isCurrentPage === true ? 'other_mobile_active' : null].join(' ')}
                             onClick={() => {
-                                this.setState({showJs: true, showCss: false, showOther: false})
+                                this.props.setSkillsIndex(2)
                             }}
                         >
                             <label className='title_2_mobile'>JavaScript</label>
                         </div>
                         {
-                            this.state.showJs === true ?
+                            skillsIndex ===2 ?
                                 <div>
                                     <span className='skills_line_mobile' style={{top: '28vh', left: '50%'}}/>
                                     <span className='skills_line_mobile' style={{top: '35vh', left: '50%'}}/>
@@ -111,13 +109,13 @@ export default class Skills extends Component {
                         <div
                             className={['title_2_div_mobile other_mobile', isCurrentPage === true ? 'other_mobile_active' : null].join(' ')}
                             onClick={() => {
-                                this.setState({showOther: true, showCss: false, showJs: false})
+                                this.props.setSkillsIndex(1)
                             }}
                         >
                             <label className='title_2_mobile'>{isChinese === true ? '其他' : 'Other'}</label>
                         </div>
                         {
-                            this.state.showOther === true ?
+                            skillsIndex===1 ?
                                 <div>
                                     <span className='skills_line_mobile' style={{top: '28vh', left: '13%'}}/>
                                     <span className='skills_line_mobile_heng' style={{top: '35vh', left: '12.7%'}}/>
@@ -170,13 +168,12 @@ export default class Skills extends Component {
                         <div
                             className={['title_2_div_mobile css_mobile', isCurrentPage === true ? 'other_mobile_active' : null].join(' ')}
                             onClick={() => {
-                                this.setState({showCss: true, showJs: false, showOther: false})
-                            }}
+                                this.props.setSkillsIndex(3)                            }}
                         >
                             <label className='title_2_mobile'>css</label>
                         </div>
                         {
-                            this.state.showCss === true ?
+                            skillsIndex===3?
                                 <div>
                                     <span className='skills_line_mobile' style={{top: '28vh', left: '87%'}}/>
                                     <span className='skills_line_mobile_heng' style={{top: '35vh', left: '50%'}}/>
@@ -249,6 +246,7 @@ export default class Skills extends Component {
                                 <div
                                     className={['inform_model', this.state.showInform === true ? 'show_inform_model' : null].join(' ')}
                                 >
+                                    <div className='i_m_bg'><img src={require('../../images/skills/skills_bg_1.jpg')} /></div>
                                     <div className='i_model_title'>
                                         <label>{this.state.informVal.title}</label>
                                     </div>

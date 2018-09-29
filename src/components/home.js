@@ -31,7 +31,8 @@ class Home extends Component {
             thirdIndex: 0,
             thirdWholePage: null,
             isChinese: true,
-            deviceName: null
+            deviceName: null,
+            skillsIndex: 0
         }
     }
 
@@ -82,6 +83,9 @@ class Home extends Component {
                         currentNum: this.activeIndex,
                         wholePage: this.slides.length
                     });
+                    if (this.activeIindex !== 3) {
+                        _this.setState({skillsIndex: 0});
+                    }
                 },
             },
         });
@@ -163,6 +167,11 @@ class Home extends Component {
         } else if (de.webkitCancelFullScreen) {
             de.webkitCancelFullScreen();
         }
+    }
+
+    //修改技能树的状态
+    setSkillsIndex(index) {
+        this.setState({skillsIndex: index});
     }
 
 
@@ -279,7 +288,8 @@ class Home extends Component {
                                     <div className="swiper-slide" style={{background: 'transparent'}}>
                                         <Skills contentData={contentData.skills} isChinese={this.state.isChinese}
                                                 currentNum={this.state.currentNum} thirdIndex={this.state.thirdIndex}
-                                                deviceName={this.state.deviceName}
+                                                deviceName={this.state.deviceName} skillsIndex={this.state.skillsIndex}
+                                                setSkillsIndex={this.setSkillsIndex.bind(this)}
                                         />
                                     </div>
                                     <div className="swiper-slide" style={{background: 'transparent'}}>
@@ -304,12 +314,16 @@ class Home extends Component {
                                 }
                                 <div className='third_next more_btn'>
                                     {
-                                        this.state.deviceName==='mobile'? null :
-                                        (this.state.thirdIndex + 1) === this.state.thirdWholePage ? null :
-                                            <div>
-                                                {this.state.isChinese == true ? '了解更多' : 'More'}
-                                                < Icon type="arrow-right" theme="outlined"/>
+                                        this.state.deviceName === 'mobile' ?
+                                            <div className='i_arr_right'>
+                                                <Icon type="arrow-right" theme="outlined"/>
                                             </div>
+                                            :
+                                            (this.state.thirdIndex + 1) === this.state.thirdWholePage ? null :
+                                                <div style={{position: 'absolute', top: '10%', left: '10%'}}>
+                                                    {this.state.isChinese == true ? '了解更多' : 'More'}
+                                                    < Icon type="arrow-right" theme="outlined"/>
+                                                </div>
                                     }
                                 </div>
                             </div>

@@ -8,28 +8,29 @@
   height: 300px;
   //margin-left: -100%;
   position: relative;
-  left:-300px;
+  left: -300px;
 }
 
 .right {
   background: gold;
   width: 300px;
-  height:300px;
+  height: 300px;
   margin-left: -300px;
   position: relative;
-  right:-300px;
+  right: -300px;
 }
+
 .middle {
   border: 1px solid black;
   height: 300px;
   padding: 0 400px;
 }
-.container{
+
+.container {
   border: 1px solid black;
   height: 300px;
   padding: 0 400px;
 }
-
 
 .donghua1 {
   width: 100vw;
@@ -101,19 +102,18 @@
   }
 }
 
-
-
-
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
   font-size: 62.5%;
 }
+
 //全屏显示
 .whole {
   width: 90px;
@@ -121,7 +121,7 @@ body {
   //background: #8fceff;
   position: absolute;
   top: 1%;
-  right:1%;
+  right: 1%;
   font-size: 1.4em;
   color: #ffffff;
   font-weight: lighter;
@@ -131,6 +131,7 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .icon_fullScreen {
   width: 18px;
   height: 18px;
@@ -143,11 +144,13 @@ body {
   padding: 0;
   cursor: pointer;
 }
+
 .panel_div {
   margin: 0;
   padding: 0;
 }
-.swiper-slide{
+
+.swiper-slide {
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -160,24 +163,26 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 .first_banner {
   width: 100vw;
   height: 100vh;
 }
+
 img {
   width: 100%;
   height: 100%;
 }
 
 .next_btn {
-  width:70px;
-  height:70px;
-  background:transparent;
-  position:absolute;
-  bottom:10px;
-  left:50%;
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
   transform: translateX(-50%);
-  z-index:99;
+  z-index: 99;
   font-size: 60px;
   color: #cccccc;
   text-align: center;
@@ -186,6 +191,7 @@ img {
   font-weight: bold;
   transition: all 0.4s ease-in-out;
 }
+
 .next_btn:hover {
   color: #ffffff;
 }
@@ -194,8 +200,8 @@ img {
   width: 60px;
   height: 80vh;
   position: absolute;
-  top:50%;
-  left:0;
+  top: 50%;
+  left: 0;
   transform: translateY(-50%);
   z-index: 99;
   text-align: center;
@@ -204,17 +210,19 @@ img {
   color: transparent;
   font-weight: bold;
 }
+
 .first_prev:hover {
   //background: #666666;
   //opacity: 0.1;
   color: #ffffff;
 }
+
 .first_next {
   width: 60px;
   height: 80vh;
   position: absolute;
-  top:50%;
-  right:0;
+  top: 50%;
+  right: 0;
   transform: translateY(-50%);
   z-index: 99;
   text-align: center;
@@ -223,6 +231,7 @@ img {
   color: transparent;
   font-weight: bold;
 }
+
 .first_next:hover {
   //background: #666666;
   //opacity: 0.1;
@@ -230,12 +239,12 @@ img {
 }
 
 .more_btn {
-  width: 7vw;
-  height: 5vh;
+  width: 17vw;
+  height: 15vh;
   //background: aquamarine;
   position: absolute;
-  bottom: 10%;
-  right: 5%;
+  bottom: 0;
+  right: 0;
   z-index: 99;
   text-align: center;
   line-height: 5vh;
@@ -251,21 +260,7 @@ img {
   height: 3vh;
   color: #ffffff;
   position: absolute;
-  top :1%;
-  //right: 8.5%;
-  font-size: 1.4em;
-  font-weight: lighter;
-  line-height: 3vh;
-  cursor: pointer;
-  z-index: 10;
-  text-align: center;
-}
-.change_zh {
-  width: 110px;
-  height: 3vh;
-  color: #ffffff;
-  position: absolute;
-  top :1%;
+  top: 1%;
   //right: 8.5%;
   font-size: 1.4em;
   font-weight: lighter;
@@ -275,6 +270,28 @@ img {
   text-align: center;
 }
 
+.change_zh {
+  width: 110px;
+  height: 3vh;
+  color: #ffffff;
+  position: absolute;
+  top: 1%;
+  //right: 8.5%;
+  font-size: 1.4em;
+  font-weight: lighter;
+  line-height: 3vh;
+  cursor: pointer;
+  z-index: 10;
+  text-align: center;
+}
+
+//手机端skill界面右箭头
+.i_arr_right {
+  font-size: 22px;
+  position: absolute;
+  bottom: 40%;
+  left: 5%;
+}
 
 
 
