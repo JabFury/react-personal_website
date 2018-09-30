@@ -34,7 +34,7 @@ export default class History extends Component {
                                         <use xlinkHref={item.iconUrl}></use>
                                     </svg>
                                     <span
-                                        className={[deviceName === 'mobile' ? 'shu_mobile' : 'shu', isCurrentPage === true ? (item.type + '_mobile') : null].join(' ')}></span>
+                                        className={[deviceName === 'mobile' ? 'shu_mobile' : 'shu', isCurrentPage === true ? (deviceName === 'mobile' ?(item.type + '_mobile'):item.type) : null].join(' ')}></span>
                                     {
                                         deviceName === "mobile" ?
                                             <div
