@@ -265,22 +265,42 @@ class Home extends Component {
                                     <div className="swiper-slide" style={{background: '#fff6e4'}}>
                                         <Money deviceName={this.state.deviceName}/>
                                     </div>
+                                    {/*<div className="swiper-slide" style={{background: '#fff6e4'}}></div>*/}
                                 </div>
-                                <div className='first_prev'>
-                                    <Icon type="left" theme="outlined"/>
-                                </div>
-                                <div className='first_next'>
-                                    <Icon type="right" theme="outlined"/>
-                                </div>
+                                {
+                                    deviceName === 'mobile' ? null :
+                                        <div>
+                                            <div className='first_prev'>
+                                                <Icon type="left" theme="outlined"/>
+                                            </div>
+                                            <div className='first_next'>
+                                                <Icon type="right" theme="outlined"/>
+                                            </div>
+                                        </div>
+                                }
                             </div>
                         </div>
                         <div className="swiper-slide">
-                            <FootPrint contentData={contentData.footPointData} currentNum={this.state.currentNum}
-                                       isChinese={this.state.isChinese} deviceName={this.state.deviceName}/>
+                            <div className="first_banner">
+                                <div className="swiper-wrapper">
+                                    <div className="swiper-slide" style={{background: 'transparent'}}>
+                                        <FootPrint contentData={contentData.footPointData}
+                                                   currentNum={this.state.currentNum}
+                                                   isChinese={this.state.isChinese} deviceName={this.state.deviceName}/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333', opacity: '0.7'}}>
-                            <History contentData={contentData.history.pageData} currentNum={this.state.currentNum}
-                                     deviceName={this.state.deviceName}/>
+                            <div className="first_banner">
+                                <div className="swiper-wrapper">
+                                    <div className="swiper-slide" style={{background: 'transparent'}}>
+                                        <History contentData={contentData.history.pageData}
+                                                 currentNum={this.state.currentNum}
+                                                 deviceName={this.state.deviceName}/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="swiper-slide">
                             <div className="third_banner">
@@ -330,10 +350,16 @@ class Home extends Component {
                             </div>
                         </div>
                         <div className="swiper-slide" style={{background: '#333333'}}>
-                            <Connect currentNum={this.state.currentNum}
-                                     isChinese={this.state.isChinese}
-                                     deviceName={this.state.deviceName}
-                            />
+                            <div className="first_banner">
+                                <div className="swiper-wrapper">
+                                    <div className="swiper-slide" style={{background: 'transparent'}}>
+                                        <Connect currentNum={this.state.currentNum}
+                                                 isChinese={this.state.isChinese}
+                                                 deviceName={this.state.deviceName}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {
